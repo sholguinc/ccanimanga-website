@@ -1,0 +1,15 @@
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-white;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+
+  &__icon {
+    width: 65%;
+    height: 65%;
+    color: $ccam-red;
+  }
+}

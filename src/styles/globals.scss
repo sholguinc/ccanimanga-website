@@ -1,0 +1,47 @@
+@import './abstracts/variables.scss';
+
+// main colors
+$main-background: $color-gray-20;
+$ccam-red: $coral-pink;
+
+// text
+$color-text-primary: $color-fake-black;
+$color-text-secondary: $color-gray-100;
+$color-text-tertiary: $color-black;
+
+// fonts-types
+$main-font: $quicksand;
+$jp-font: $noto-jp;
+
+// font-weight
+$weight-font-regular: 400; // (default)
+$weight-font-medium: 500;
+$weight-font-bold: 700;
+
+// fonts-sizes
+$size-font-text-small: .625rem; // 10px
+$size-font-text-medium: .75rem; // 12px (default)
+$size-font-text-large: .875rem; // 14px
+$size-font-text-larger: 1rem; // 16px
+
+$size-font-subtitle-small: 1.0625rem; // 17px
+$size-font-subtitle-medium: 1.125rem; // 18px (default)
+$size-font-subtitle-large: 1.25rem; // 20px
+
+$size-font-title-medium: 1.8125rem; // 29px (default)
+$size-font-title-large: 2.1875rem; // 35px
+$size-font-title-larger: 3.4375rem; // 55px
+
+// height-font
+$size-height-label: 0.75rem; // 12px
+$size-height-text: 1rem; // 16px
+$size-height-subtitle: 1.375rem; // 22px
+$size-height-title: 2.1875rem; // 35px
+
+// responsive design
+$xsm: 480px;
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xl2: 1536px;
