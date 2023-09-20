@@ -1,3 +1,5 @@
+$sidebar-width: 80px;
+
 .sidebar {
   margin: 0;
   display: block;
@@ -7,7 +9,7 @@
   top: 0;
   right: 0;
 
-  width: 80px;
+  width: $sidebar-width;
   height: 100%;
 
   z-index: 100;

@@ -1,0 +1,17 @@
+.simplebar-scrollbar::before {
+  color: transparent;
+  background: none;
+}
+
+.simplebar-scrollbar {
+  background-color: transparent;
+  width: 5px;
+  margin-left: 2px;
+  border-radius: 3px;
+  transition: background-color 400ms ease-in;
+}
+
+.simplebar-visible {
+  background-color: $ccam-red;
+  transition: background-color 200ms ease-in;
+}
