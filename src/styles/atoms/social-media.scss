@@ -1,15 +1,27 @@
+$icon-color: $ccam-red;
+$bg-color: $color-white;
+
 .social-media {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: $color-white;
   width: 30px;
   height: 30px;
   border-radius: 100%;
+  background: $bg-color;
 
-  &__icon {
+  .social-media__icon {
     width: 65%;
     height: 65%;
-    color: $ccam-red;
+    color: $icon-color;
+  }
+
+  // invert
+  &[data-invert='true'] {
+    background-color: $icon-color;
+
+    .social-media__icon {
+      color: $bg-color;
+    }
   }
 }

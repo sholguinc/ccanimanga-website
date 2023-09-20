@@ -1,17 +1,23 @@
-import { ITextInput } from '@/models';
+import { IText } from '@/models';
 
 export const Text = ({
   type = 'primary',
   size = 'medium',
   color,
-  bold = false,
+  weight = 'regular',
+  family = 'quicksand',
+  className,
   children,
-}: ITextInput) => {
-  const classNames = ['text', type, size, color ?? ''];
+}: IText) => {
+  const classNames = [
+    'text',
+    type,
+    size,
+    weight,
+    family,
+    color ?? '',
+    className ?? '',
+  ];
 
-  return (
-    <p className={classNames.join(' ')} data-bold={bold}>
-      {children}
-    </p>
-  );
+  return <p className={classNames.join(' ')}>{children}</p>;
 };

@@ -1,0 +1,16 @@
+.social-media-list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+
+  // direction
+  &.row {
+    flex-direction: row;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+}

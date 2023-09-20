@@ -1,14 +1,20 @@
 // General
 @import "./abstracts/root.scss";
 
-// import atoms
+// import atom
+@import "./atoms/text.scss";
 @import "./atoms/social-media.scss";
-@import "./atoms/scrollbar.scss";
 
 //import molecules
+@import "./molecules/scrollbar.scss";
+@import "./molecules/angle-up.scss";
+@import "./molecules/organization-list.scss";
+@import "./molecules/social-media-list.scss";
 
 //import organisms
+@import "./organisms/footer.scss";
 @import "./organisms/sidebar.scss";
+@import "./organisms/collapsed-sidebar.scss";
 
 //import templates
 @import "./templates/layout-template.scss";

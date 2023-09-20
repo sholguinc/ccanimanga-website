@@ -1,18 +1,19 @@
 import { Outlet } from 'react-router-dom';
 
-import { Scrollbar } from '@/components/atoms';
-import { Sidebar } from '@/components/organisms';
+import { Scrollbar } from '@/components/molecules';
+import { Sidebar, CollapsedSidebar, Footer } from '@/components/organisms';
 
 export const LayoutTemplate = () => {
   return (
     <div className="layout-template">
       {/*<TopBarNavigation />*/}
-      <section className="layout-template__body">
+      <section className="layout-template__content">
         <Sidebar />
-        <main className="layout-template__body__content">
+        <CollapsedSidebar />
+        <main className="layout-template__body">
           <Scrollbar>
             <Outlet />
-            {/*<Footer scrollableNodeRef={scrollableNodeRef} />*/}
+            <Footer />
           </Scrollbar>
         </main>
       </section>

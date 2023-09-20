@@ -1,7 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-import { SocialMediaSite, ISocialMedia, ISocialMediaIcon, ISocialMediaLink } from '@/models';
+import {
+  SocialMediaSite,
+  ISocialMedia,
+  ISocialMediaIcon,
+  ISocialMediaLink,
+} from '@/models';
 
 const Icon: ISocialMediaIcon = {
   [SocialMediaSite.Facebook]: faFacebook,
@@ -13,10 +18,10 @@ const Link: ISocialMediaLink = {
   [SocialMediaSite.Instagram]: 'https://www.instagram.com/ccam.uni',
 };
 
-export const SocialMedia = ({ site }: ISocialMedia) => {
+export const SocialMedia = ({ site, invert = false }: ISocialMedia) => {
   return (
     <a href={Link[site]} target="_blank" rel="noopener noreferrer">
-      <div className="social-media">
+      <div className="social-media" data-invert={invert}>
         <FontAwesomeIcon icon={Icon[site]} className="social-media__icon" />
       </div>
     </a>

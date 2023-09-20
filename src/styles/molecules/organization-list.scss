@@ -1,0 +1,56 @@
+@mixin border-divide {
+  border-color: $color-black;
+  border-style: solid;
+}
+
+@mixin divide-x($width) {
+  > * + * {
+    border-right-width: 0;
+    border-left-width: $width;
+    @include border-divide;
+  }
+}
+
+@mixin divide-y($width) {
+  > * + * {
+    border-top-width: $width;
+    border-bottom-width: 0;
+    @include border-divide;
+  }
+}
+
+.organization-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0 40px;
+
+  height: min-content;
+
+  @include divide-x(1px);
+  @include divide-y(0);
+
+  list-style: none;
+
+  .organization {
+    padding: 0 10px;
+    margin: auto 0;
+    text-align: center;
+
+    > a {
+      text-decoration-line: none;
+      color: $color-black
+    }
+
+    &__text {
+      text-transform: uppercase;
+
+      &:hover {
+        text-decoration-line: underline;
+      }
+    }
+  }
+}

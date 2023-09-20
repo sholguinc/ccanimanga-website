@@ -1,0 +1,36 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  background: transparent;
+  height: 150px;
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__social-media {
+    display: none;
+  }
+
+  &__country {
+    font-size: 11px;
+    margin: 12px auto 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: $sm) {
+  .footer {
+    &__social-media {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding-bottom: 15px;
+    }
+  }
+}

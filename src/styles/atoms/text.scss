@@ -1,0 +1,73 @@
+.text {
+  font-weight: $weight-font-regular;
+  line-height: $size-height-text;
+
+  // alternative types
+  &.primary {
+    color: $color-text-primary;
+  }
+
+  &.secondary {
+    color: $color-text-secondary;
+  }
+
+  &.tertiary {
+    color: $color-text-tertiary;
+  }
+
+  // sizes
+  &.small {
+    font-size: $size-font-text-small;
+  }
+
+  &.medium {
+    font-size: $size-font-text-medium;
+  }
+
+  &.large {
+    font-size: $size-font-text-large;
+  }
+
+  &.larger {
+    font-size: $size-font-text-larger;
+  }
+
+  // colors
+  &.black {
+    color: $black;
+  }
+
+  &.gray {
+    color: $gray;
+  }
+
+  &.white {
+    color: $white;
+  }
+
+  &.deep-blue {
+    color: $deep-blue;
+  }
+
+  // weight
+  &.light {
+    font-weight: $weight-font-light;
+  }
+
+  &.regular {
+    font-weight: $weight-font-regular;
+  }
+
+  &.bold {
+    font-weight: $weight-font-bold;
+  }
+
+  // family
+  &.quicksand {
+    font-family: $quicksand;
+  }
+
+  &.noto-jp {
+    font-family: $noto-jp;
+  }
+}
