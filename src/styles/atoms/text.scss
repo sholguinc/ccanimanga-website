@@ -1,7 +1,4 @@
 .text {
-  font-weight: $weight-font-regular;
-  line-height: $size-height-text;
-
   // alternative types
   &.primary {
     color: $color-text-primary;
@@ -18,18 +15,32 @@
   // sizes
   &.small {
     font-size: $size-font-text-small;
+    line-height: $line-height-text-small;
   }
 
   &.medium {
     font-size: $size-font-text-medium;
+    line-height: $line-height-text-medium;
   }
 
   &.large {
     font-size: $size-font-text-large;
+    line-height: $line-height-text-large;
   }
 
   &.larger {
     font-size: $size-font-text-larger;
+    line-height: $line-height-text-larger;
+  }
+
+  &.x-large {
+    font-size: $size-font-text-x-large;
+    line-height: $line-height-text-x-large;
+  }
+
+  &.xx-large {
+    font-size: $size-font-text-xx-large;
+    line-height: $line-height-text-xx-large;
   }
 
   // colors
@@ -56,6 +67,10 @@
 
   &.regular {
     font-weight: $weight-font-regular;
+  }
+
+  &.semi-bold {
+    font-weight: $weight-font-semi-bold;
   }
 
   &.bold {

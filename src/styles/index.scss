@@ -3,18 +3,20 @@
 
 // import atom
 @import "./atoms/text.scss";
+@import "./atoms/angle-up.scss";
 @import "./atoms/social-media.scss";
 
 //import molecules
 @import "./molecules/scrollbar.scss";
-@import "./molecules/angle-up.scss";
 @import "./molecules/organization-list.scss";
 @import "./molecules/social-media-list.scss";
+@import "./molecules/activity.scss";
 
 //import organisms
 @import "./organisms/footer.scss";
 @import "./organisms/sidebar.scss";
 @import "./organisms/collapsed-sidebar.scss";
+@import "./organisms/activities-grid.scss";
 
 //import templates
 @import "./templates/layout-template.scss";

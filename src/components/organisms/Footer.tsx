@@ -1,9 +1,5 @@
-import { Text } from '@/components/atoms';
-import {
-  OrganizationList,
-  AngleUp,
-  SocialMediaList,
-} from '@/components/molecules';
+import { Text, AngleUp } from '@/components/atoms';
+import { OrganizationList, SocialMediaList } from '@/components/molecules';
 
 export const Footer = () => {
   return (

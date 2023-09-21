@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IconDefinition } from '@fortawesome/free-regular-svg-icons';
+import { IActivityData, SocialMediaSite } from '@/models';
 
 // Base
 type ChildrenType = string | React.ReactNode;
@@ -8,8 +8,14 @@ export type HTMLDivType = HTMLDivElement | null;
 
 type AlternativeType = 'primary' | 'secondary' | 'tertiary';
 type ColorType = 'black' | 'gray' | 'white' | 'deep-blue';
-type TextSizeType = 'small' | 'medium' | 'large' | 'larger';
-type WeightType = 'light' | 'regular' | 'medium' | 'bold';
+type TextSizeType =
+  | 'small'
+  | 'medium'
+  | 'large'
+  | 'larger'
+  | 'x-large'
+  | 'xx-large';
+type WeightType = 'light' | 'regular' | 'semi-bold' | 'bold';
 type Familytype = 'quicksand' | 'noto-jp';
 
 export interface IChildren {
@@ -31,19 +37,6 @@ export interface IHamburger {
   size: number;
 }
 
-export enum SocialMediaSite {
-  Facebook = 'facebook',
-  Instagram = 'instagram',
-}
-
-export type ISocialMediaIcon = {
-  [key in SocialMediaSite]: IconDefinition;
-};
-
-export type ISocialMediaLink = {
-  [key in SocialMediaSite]: string;
-};
-
 export interface ISocialMedia {
   site: SocialMediaSite;
   invert?: boolean;
@@ -56,9 +49,8 @@ export interface ISocialMediaList {
 }
 
 // Molecules
-export interface IOrganization {
-  name: string;
-  url: string;
+export interface IActivity {
+  data: IActivityData;
 }
 
 // Organisms
