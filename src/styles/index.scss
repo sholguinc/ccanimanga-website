@@ -5,6 +5,7 @@
 @import "./atoms/text.scss";
 @import "./atoms/angle-up.scss";
 @import "./atoms/social-media.scss";
+@import "./atoms/button.scss";
 
 //import molecules
 @import "./molecules/scrollbar.scss";
@@ -14,13 +15,12 @@
 
 //import organisms
 @import "./organisms/footer.scss";
-@import "./organisms/sidebar.scss";
-@import "./organisms/collapsed-sidebar.scss";
+@import "./organisms/collapsed-menu";
 @import "./organisms/activities-grid.scss";
 
 //import templates
-@import "./templates/layout-template.scss";
 //@import "./templates/home-template.scss";
-//@import "./templates/error-template.scss";
+@import "./templates/layout-template.scss";
+@import "./templates/error-template.scss";
 
 //import pages

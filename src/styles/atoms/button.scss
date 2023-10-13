@@ -1,0 +1,29 @@
+.button {
+  border: none;
+  cursor: pointer;
+
+  border-radius: $button-border-radius;
+  background-color: $background-button;
+
+  .text {
+    color: $text-color-button;
+  }
+
+  // sizes
+  &.medium {
+    padding: $padding-button-medium;
+  }
+
+  &.xx-large {
+    padding: $padding-button-xx-large;
+  }
+
+  // invert
+  &[data-invert='true'] {
+    background-color: $text-color-button;
+
+    .text {
+      color: $background-button;
+    }
+  }
+}
