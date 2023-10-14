@@ -3,7 +3,7 @@ import { ErrorTemplate } from '@/components/templates';
 export const Error = () => {
   return (
     <>
-      <ErrorTemplate />
+      <ErrorTemplate text="Oops!" subtext="404 - Página no encontrada" />
     </>
   );
 };

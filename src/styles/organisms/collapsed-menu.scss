@@ -1,4 +1,4 @@
-.collapsed-sidebar {
+.collapsed-menu {
   display: none;
 
   margin: 0;
@@ -25,7 +25,7 @@
 }
 
 @media (max-width: $sm) {
-  .collapsed-sidebar {
+  .collapsed-menu {
     display: block;
   }
 }

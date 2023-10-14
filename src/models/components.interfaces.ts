@@ -7,7 +7,7 @@ type ChildrenType = string | React.ReactNode;
 export type HTMLDivType = HTMLDivElement | null;
 
 type AlternativeType = 'primary' | 'secondary' | 'tertiary';
-type ColorType = 'black' | 'gray' | 'white' | 'deep-blue';
+type ColorType = 'black' | 'gray' | 'white' | 'deep-blue' | 'ccam-red';
 type TextSizeType =
   | 'small'
   | 'medium'
@@ -16,7 +16,9 @@ type TextSizeType =
   | 'x-large'
   | 'xx-large';
 type WeightType = 'light' | 'regular' | 'semi-bold' | 'bold';
-type Familytype = 'quicksand' | 'noto-jp';
+type Familytype = 'quicksand' | 'noto-jp' | 'figtree';
+
+type ButtonSizeType = 'medium' | 'xx-large';
 
 export interface IChildren {
   children: ChildrenType;
@@ -42,15 +44,28 @@ export interface ISocialMedia {
   invert?: boolean;
 }
 
+export interface IButton {
+  text?: string;
+  size?: ButtonSizeType;
+  invert?: boolean;
+  redirectTo: string;
+}
+
+// Molecules
 export interface ISocialMediaList {
   direction?: 'row' | 'column';
   gap?: number;
   invert?: boolean;
 }
 
-// Molecules
 export interface IActivity {
   data: IActivityData;
 }
 
 // Organisms
+
+// Templates
+export interface IErrorTemplate {
+  text: string;
+  subtext?: string;
+}

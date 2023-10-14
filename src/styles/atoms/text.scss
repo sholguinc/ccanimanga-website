@@ -60,6 +60,10 @@
     color: $deep-blue;
   }
 
+  &.ccam-red {
+    color: $ccam-red;
+  }
+
   // weight
   &.light {
     font-weight: $weight-font-light;
@@ -84,5 +88,9 @@
 
   &.noto-jp {
     font-family: $noto-jp;
+  }
+
+  &.figtree {
+    font-family: $figtree;
   }
 }

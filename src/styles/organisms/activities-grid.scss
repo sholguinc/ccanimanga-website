@@ -4,7 +4,7 @@
 
 @mixin aspect-ratio($w, $h) {
   .activity {
-    aspect-ratio: $w / $h;
+    aspect-ratio: calc($w / $h);
   }
 }
 

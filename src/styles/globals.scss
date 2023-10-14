@@ -9,7 +9,7 @@ $color-text-primary: $color-white;
 $color-text-secondary: $color-white;
 $color-text-tertiary: $color-black;
 
-// color type
+// text color type
 $black: $color-black;
 $gray: $color-gray-100;
 $white: $color-white;
@@ -39,6 +39,14 @@ $line-height-text-large: 1.25rem; // 20px
 $line-height-text-larger: 1.5rem; // 24px
 $line-height-text-x-large: 1.75rem; // 28px
 $line-height-text-xx-large: 2rem; // 32px
+
+// buttons
+$background-color-button: $ccam-red;
+$text-color-button: $color-white;
+$button-border-radius: 100px;
+
+$padding-button-medium: 6px 10px;
+$padding-button-xx-large: 10px 25px;
 
 // responsive design
 $xsm: 480px;

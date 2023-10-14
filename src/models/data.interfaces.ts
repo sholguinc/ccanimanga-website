@@ -1,4 +1,4 @@
-import { IconDefinition } from '@fortawesome/free-regular-svg-icons';
+import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
 
 export enum SocialMediaSite {
   Facebook = 'facebook',
