@@ -1,29 +1,65 @@
-.button {
-  border: none;
-  cursor: pointer;
-
-  border-radius: $button-border-radius;
-  background-color: $background-button;
+@mixin button-style($bg-color, $text-color) {
+  background-color: $bg-color;
+  border-color: $bg-color;
 
   .text {
-    color: $text-color-button;
+    color: $text-color;
   }
+
+  svg.arrow {
+    fill: $text-color;
+  }
+
+  &:hover {
+    background-color: $text-color;
+
+    .text {
+      color: $bg-color;
+    }
+
+    svg.arrow {
+      fill: $bg-color;
+    }
+  }
+}
+
+.button {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-style: solid;
+  border-radius: $button-border-radius;
+
+  @include button-style($background-color-button, $text-color-button);
 
   // sizes
   &.medium {
+    border-width: 1px;
+    gap: 5px;
     padding: $padding-button-medium;
+
+    svg.arrow {
+      margin-top: 1px;
+      width: 10px;
+    }
   }
 
   &.xx-large {
+    border-width: 2px;
+    gap: 10px;
     padding: $padding-button-xx-large;
+
+    svg.arrow {
+      margin-top: 2px;
+      width: 20px;
+    }
   }
 
   // invert
   &[data-invert='true'] {
-    background-color: $text-color-button;
-
-    .text {
-      color: $background-button;
-    }
+    @include button-style($text-color-button, $background-color-button);
   }
 }

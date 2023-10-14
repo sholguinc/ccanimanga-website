@@ -21,7 +21,6 @@
   .sub-text {
     font-size: 1.5rem;
     line-height: normal;
-
     padding-bottom: 30px;
   }
 
@@ -56,3 +55,15 @@
   }
 }
 
+@media (max-width: $xsm) {
+  .error-template {
+    .main-text {
+      font-size: 6rem;
+    }
+
+    .sub-text {
+      font-size: 1.2rem;
+      padding-bottom: 20px;
+    }
+  }
+}

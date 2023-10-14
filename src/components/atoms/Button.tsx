@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { Text } from '@/components/atoms';
 import { IButton } from '@/models';
 
+import Arrow from '@/assets/icons/arrow.svg?react';
+
 export const Button = ({
   text = 'Ver más',
   size = 'medium',
@@ -20,6 +22,7 @@ export const Button = ({
       <Text size={size} weight="bold">
         {text}
       </Text>
+      <Arrow className="arrow" />
     </button>
   );
 };

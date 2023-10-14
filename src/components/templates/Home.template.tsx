@@ -1,9 +1,11 @@
 import { ActivitiesGrid } from '@/components/organisms';
+import { Button } from '@/components/atoms';
 
 export const HomeTemplate = () => {
   return (
     <div className="home-template">
       <ActivitiesGrid />
+      <Button text="Ir a Inicio" size="xx-large" redirectTo={'/'} />
       <p style={{ width: '20px' }}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
         consectetur ea eius, eum excepturi laborum ratione! Commodi dicta
