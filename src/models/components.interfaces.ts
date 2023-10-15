@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IActivityData, SocialMediaSite } from '@/models';
+import { IActivityData, SocialMediaSite, ISlide } from '@/models';
 
 // Base
 type ChildrenType = string | React.ReactNode;
@@ -63,6 +63,9 @@ export interface IActivity {
 }
 
 // Organisms
+export interface ISlider {
+  slides: ISlide[];
+}
 
 // Templates
 export interface IErrorTemplate {

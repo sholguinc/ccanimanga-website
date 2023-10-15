@@ -1,10 +1,14 @@
-import { ActivitiesGrid } from '@/components/organisms';
 import { Button } from '@/components/atoms';
+import { Slider } from '@/components/organisms';
+
+import { homeSlides } from '@/data/sliders.ts';
 
 export const HomeTemplate = () => {
   return (
     <div className="home-template">
-      <ActivitiesGrid />
+      <section className="home-template__slider">
+        <Slider slides={homeSlides} />
+      </section>
       <Button text="Ir a Inicio" size="xx-large" redirectTo={'/'} />
       <p style={{ width: '20px' }}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque

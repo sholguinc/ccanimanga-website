@@ -17,9 +17,10 @@
 @import "./organisms/footer.scss";
 @import "./organisms/collapsed-menu";
 @import "./organisms/activities-grid.scss";
+@import "./organisms/slider.scss";
 
 //import templates
-//@import "./templates/home-template.scss";
+@import "./templates/home-template.scss";
 @import "./templates/layout-template.scss";
 @import "./templates/error-template.scss";
 

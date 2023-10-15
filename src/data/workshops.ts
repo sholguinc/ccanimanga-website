@@ -5,12 +5,12 @@ export const workshops = {
     name: 'Manga',
     path: '/manga',
     title: 'Taller de Manga',
-    backgroundImage: baseUrl + '/banner/manga.jpg',
+    backgroundImage: baseUrl + '/banner/02.jpg',
     summary:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt\n' +
       'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe\n' +
       'suscipit vero voluptatem!',
-    summaryImage: baseUrl + '/summary/manga.jpg',
+    summaryImage: baseUrl + '/summary/02.jpg',
   },
   origami: {
     name: 'Origami',

@@ -1,5 +1,9 @@
 import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
 
+export type FixedLengthArray<T, Length extends number> = [T, ...T[]] & {
+  length: Length;
+};
+
 export enum SocialMediaSite {
   Facebook = 'facebook',
   Instagram = 'instagram',
@@ -22,4 +26,9 @@ export interface IActivityData {
   name: string;
   path: string;
   background: string;
+}
+
+export interface ISlide {
+  alt: string;
+  src: string;
 }

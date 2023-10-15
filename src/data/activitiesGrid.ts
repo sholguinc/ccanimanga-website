@@ -1,10 +1,6 @@
-import { IActivityData } from '@/models';
+import { IActivityData, FixedLengthArray } from '@/models';
 
 const baseUrl = '/images/home/activities';
-
-type FixedLengthArray<T, Length extends number> = [T, ...T[]] & {
-  length: Length;
-};
 
 export const activitiesGrid: FixedLengthArray<IActivityData, 5> = [
   {
