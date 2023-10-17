@@ -4,7 +4,7 @@
 }
 
 @mixin bullet-transition($property) {
-  transition: $property .4s ease-in-out;
+  transition: $property .5s ease-in-out;
 }
 
 .slider {
@@ -67,8 +67,10 @@
     transform: translateY(-20px);
   }
 
+  $bullet-width: 60px;
+
   .swiper-pagination-bullet {
-    width: 60px;
+    width: $bullet-width;
     height: 5px;
     border-radius: 10px;
     background: $color-white;
@@ -78,7 +80,7 @@
 
   .swiper-pagination-bullet-active {
     opacity: .9;
-    width: 90px;
+    width: calc(1.5 * $bullet-width);
     @include bullet-transition(width)
   }
 }
