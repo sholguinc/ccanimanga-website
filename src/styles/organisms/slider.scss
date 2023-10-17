@@ -3,6 +3,11 @@
   height: 100%;
 }
 
+@mixin set-size($size) {
+  width: $size;
+  height: $size;
+}
+
 @mixin bullet-transition($property) {
   transition: $property .5s ease-in-out;
 }
@@ -13,6 +18,7 @@
 
   &__swiper {
     @include set-full;
+    filter: brightness(.6);
   }
 
   &__image {
@@ -25,8 +31,6 @@
     top: 0;
     z-index: 10;
     position: absolute;
-    background: $color-black;
-    opacity: .4;
   }
 
   &__angle {
@@ -35,8 +39,7 @@
     color: $color-white;
     opacity: .7;
 
-    width: 60px;
-    height: 60px;
+    @include set-size(60px);
 
     position: absolute;
     top: 50%;
@@ -82,5 +85,23 @@
     opacity: .9;
     width: calc(1.5 * $bullet-width);
     @include bullet-transition(width)
+  }
+}
+
+@media (max-width: $lg) {
+  .slider__angle {
+      @include set-size(48px);
+    }
+}
+
+@media (max-width: $sm) {
+  .slider__angle {
+    @include set-size(40px);
+  }
+}
+
+@media (max-width: $xsm) {
+  .slider__angle {
+      display: none;
   }
 }

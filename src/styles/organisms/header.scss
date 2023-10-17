@@ -51,3 +51,33 @@
     @include border-animation($color-white);
   }
 }
+
+@media (max-width: $lg) {
+  .header {
+    height: 140px;
+
+    &__logo img {
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .header {
+    padding: 0 20px;
+
+    &__routes {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $xsm) {
+  .header {
+    height: 120px;
+
+    &__logo img {
+      width: 160px;
+    }
+  }
+}

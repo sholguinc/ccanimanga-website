@@ -1,4 +1,6 @@
 .text {
+  font-family: $main-font;
+
   // alternative types
   &.primary {
     color: $color-text-primary;
