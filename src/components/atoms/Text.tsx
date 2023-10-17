@@ -6,6 +6,7 @@ export const Text = ({
   color,
   weight = 'regular',
   family = 'quicksand',
+  transform,
   className,
   children,
 }: IText) => {
@@ -17,6 +18,7 @@ export const Text = ({
     family,
     color ?? '',
     className ?? '',
+    transform ?? '',
   ];
 
   return <p className={classNames.join(' ')}>{children}</p>;

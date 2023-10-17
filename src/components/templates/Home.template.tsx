@@ -1,13 +1,13 @@
 import { Button } from '@/components/atoms';
 import { Slider } from '@/components/organisms';
 
-import { homeSlides } from '@/data/sliders.ts';
+import { slides } from '@/data';
 
 export const HomeTemplate = () => {
   return (
     <div className="home-template">
       <section className="home-template__slider">
-        <Slider slides={homeSlides} />
+        <Slider slides={slides} />
       </section>
       <Button text="Ir a Inicio" size="xx-large" redirectTo={'/'} />
       <p style={{ width: '20px' }}>

@@ -17,6 +17,7 @@ type TextSizeType =
   | 'xx-large';
 type WeightType = 'light' | 'regular' | 'semi-bold' | 'bold';
 type Familytype = 'quicksand' | 'noto-jp' | 'figtree';
+type TextTransformType = 'uppercase' | 'capitalize';
 
 type ButtonSizeType = 'medium' | 'xx-large';
 
@@ -33,6 +34,7 @@ export interface IText {
   weight?: WeightType;
   family?: Familytype;
   className?: string;
+  transform?: TextTransformType;
 }
 
 export interface IHamburger {

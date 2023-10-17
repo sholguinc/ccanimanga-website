@@ -93,4 +93,13 @@
   &.figtree {
     font-family: $figtree;
   }
+
+  // transform
+  &.uppercase {
+    text-transform: uppercase;
+  }
+
+  &.capitalize {
+    text-transform: capitalize;
+  }
 }

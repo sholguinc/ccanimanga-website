@@ -32,3 +32,8 @@ export interface ISlide {
   alt: string;
   src: string;
 }
+
+export interface IRoute {
+  name: string;
+  path: string;
+}
