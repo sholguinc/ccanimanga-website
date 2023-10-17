@@ -59,11 +59,20 @@
     &__logo img {
       width: 200px;
     }
+
+    &__routes {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+    }
   }
 }
 
 @media (max-width: $md) {
   .header {
+    height: 120px;
     padding: 0 20px;
 
     &__routes {
@@ -74,8 +83,6 @@
 
 @media (max-width: $xsm) {
   .header {
-    height: 120px;
-
     &__logo img {
       width: 160px;
     }

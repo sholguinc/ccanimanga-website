@@ -4,7 +4,7 @@ export const CollapsedMenu = () => {
   return (
     <aside className="collapsed-menu">
       <div className="collapsed-menu__hamburger">
-        <Hamburger size={28} />
+        <Hamburger size={36} />
       </div>
     </aside>
   );

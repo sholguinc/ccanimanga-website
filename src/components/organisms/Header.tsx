@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import { Text } from '@/components/atoms';
+import { CollapsedMenu } from '@/components/organisms';
 import { routes } from '@/data';
 
 import CCAMLogo from '@/assets/logos/ccam-white.png';
@@ -27,6 +28,7 @@ export const Header = () => {
           </li>
         ))}
       </ul>
+      <CollapsedMenu />
     </header>
   );
 };
