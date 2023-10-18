@@ -74,3 +74,7 @@ export interface IErrorTemplate {
   text: string;
   subtext?: string;
 }
+
+export interface ILoadingTemplate {
+  duration: number;
+}

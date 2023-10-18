@@ -2,10 +2,10 @@ import { useContext } from 'react';
 import HamburgerReact from 'hamburger-react';
 
 import { IHamburger } from '@/models';
-import { MenuContext } from '@/context';
+import { MainContext } from '@/context';
 
 export const Hamburger = ({ size }: IHamburger) => {
-  const { menu, setMenu } = useContext(MenuContext);
+  const { menu, setMenu } = useContext(MainContext);
 
   return (
     <HamburgerReact
