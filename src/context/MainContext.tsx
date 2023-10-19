@@ -1,33 +1,17 @@
-import React, { createContext, useState } from 'react';
+import {
+  MenuContextProvider,
+  ScrollContextProvider,
+  NavigateContextProvider,
+} from '@/context';
 
-import { IMainContext, IChildren, MainContextType } from '@/models';
+import { IChildren } from '@/models';
 
-const defaultValue = {
-  menu: false,
-};
-
-export const MainContext: MainContextType = createContext<IMainContext>(
-  defaultValue as IMainContext,
-);
-
-export function MainContextProvider({ children }: IChildren) {
-  const scrollableNodeRef = React.createRef<HTMLDivElement>();
-  const [menu, setMenu] = useState(false);
-
-  const openMenu = (): void => {
-    setMenu(!menu);
-  };
-
+export const MainContextProvider = ({ children }: IChildren) => {
   return (
-    <MainContext.Provider
-      value={{
-        menu,
-        setMenu,
-        openMenu,
-        scrollableNodeRef,
-      }}
-    >
-      {children}
-    </MainContext.Provider>
+    <NavigateContextProvider>
+      <ScrollContextProvider>
+        <MenuContextProvider>{children}</MenuContextProvider>
+      </ScrollContextProvider>
+    </NavigateContextProvider>
   );
-}
+};

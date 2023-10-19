@@ -2,11 +2,23 @@ import React from 'react';
 
 import { HTMLDivType } from '@/models';
 
-export interface IMainContext {
+export interface IMenuContext {
   menu: boolean;
   setMenu: React.Dispatch<React.SetStateAction<boolean>>;
   openMenu: () => void;
+}
+
+export type MenuContextType = React.Context<IMenuContext>;
+
+export interface IScrollContext {
   scrollableNodeRef: React.RefObject<HTMLDivType>;
 }
 
-export type MainContextType = React.Context<IMainContext>;
+export type ScrollContextType = React.Context<IScrollContext>;
+
+export interface INavigateContext {
+  loading: boolean;
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export type NavigateContextType = React.Context<INavigateContext>;

@@ -1,23 +1,24 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
+import { NavigateContext } from '@/context';
 import { ILoadingTemplate } from '@/models';
 
 export const LoadingTemplate = ({ duration }: ILoadingTemplate) => {
   const location = useLocation();
-  const [pageLoading, setPageLoading] = useState(false);
+  const { loading, setLoading } = useContext(NavigateContext);
 
   useEffect(() => {
-    setPageLoading(true);
+    !loading && setLoading(true);
     setTimeout(() => {
-      setPageLoading(false);
+      setLoading(false);
     }, duration);
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.key]);
 
   return (
-    pageLoading && (
+    loading && (
       <div className="loading-template">
         <p className="loading-template__content" />
       </div>
