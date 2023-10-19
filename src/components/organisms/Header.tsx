@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom';
-
-import { Text } from '@/components/atoms';
+import { Text, DelayLink } from '@/components/atoms';
 import { CollapsedMenu } from '@/components/organisms';
 import { routes } from '@/data';
 
@@ -15,7 +13,7 @@ export const Header = () => {
       <ul className="header__routes">
         {routes.map((route, index) => (
           <li key={index} className="header__route">
-            <Link to={route.path}>
+            <DelayLink to={route.path}>
               <Text
                 size="larger"
                 weight="semi-bold"
@@ -24,7 +22,7 @@ export const Header = () => {
               >
                 {route.name}
               </Text>
-            </Link>
+            </DelayLink>
           </li>
         ))}
       </ul>

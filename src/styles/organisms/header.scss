@@ -47,7 +47,6 @@
   }
 
   &__route a {
-    text-decoration: none;
     @include border-animation($color-white);
   }
 }

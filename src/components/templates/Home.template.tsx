@@ -9,7 +9,7 @@ export const HomeTemplate = () => {
       <section className="home-template__slider">
         <Slider slides={slides} />
       </section>
-      <Button text="Ir a Inicio" size="xx-large" redirectTo={'/'} />
+      <Button text="Ir a Inicio" size="xx-large" to="/" />
       <p style={{ width: '20px' }}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
         consectetur ea eius, eum excepturi laborum ratione! Commodi dicta

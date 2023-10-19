@@ -1,4 +1,5 @@
 import React from 'react';
+import { LinkProps } from 'react-router-dom';
 
 import { IActivityData, SocialMediaSite, ISlide } from '@/models';
 
@@ -46,11 +47,13 @@ export interface ISocialMedia {
   invert?: boolean;
 }
 
+export type IDelayLink = IChildren & LinkProps;
+
 export interface IButton {
   text?: string;
   size?: ButtonSizeType;
   invert?: boolean;
-  redirectTo: string;
+  to: string;
 }
 
 // Molecules
