@@ -7,7 +7,7 @@ export const workshops: StringKeyObject<IWorkshop> = {
     name: 'Manga',
     path: '/manga',
     title: 'Taller de Manga',
-    backgroundImage: baseUrl + '/background/02.jpg',
+    backgroundImage: baseUrl + '/background/manga.jpg',
     summary:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt' +
       'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe' +

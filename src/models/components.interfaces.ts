@@ -1,7 +1,7 @@
 import React from 'react';
 import { LinkProps } from 'react-router-dom';
 
-import { IActivityData, SocialMediaSite, ISlide } from '@/models';
+import { IActivityData, SocialMediaSite, ISlide, IWorkshop } from '@/models';
 
 // Base
 type ChildrenType = string | React.ReactNode;
@@ -67,6 +67,12 @@ export interface IActivity {
   data: IActivityData;
 }
 
+export interface IBackground extends IChildren {
+  src?: string;
+  alt?: string;
+  brightness?: number;
+}
+
 // Organisms
 export interface ISlider {
   slides: ISlide[];
@@ -80,4 +86,8 @@ export interface IErrorTemplate {
 
 export interface ILoadingTemplate {
   duration: number;
+}
+
+export interface IWorkshopTemplate {
+  workshop: IWorkshop;
 }
