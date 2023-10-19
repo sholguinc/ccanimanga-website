@@ -68,8 +68,8 @@ export interface IActivity {
 }
 
 export interface IBackground extends IChildren {
-  src?: string;
-  alt?: string;
+  src: string;
+  alt: string;
   brightness?: number;
 }
 

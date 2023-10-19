@@ -1,11 +1,9 @@
 import { IBackground } from '@/models';
 
-import Pattern from '@/assets/background/pattern.png';
-
 export const Background = ({
   children,
-  src = Pattern,
-  alt = 'background',
+  src,
+  alt,
   brightness = 1,
 }: IBackground) => {
   return (
