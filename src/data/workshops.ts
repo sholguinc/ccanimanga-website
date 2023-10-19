@@ -1,14 +1,16 @@
+import { StringKeyObject, IWorkshop } from '@/models';
+
 const baseUrl = '/images/workshops';
 
-export const workshops = {
+export const workshops: StringKeyObject<IWorkshop> = {
   manga: {
     name: 'Manga',
     path: '/manga',
     title: 'Taller de Manga',
-    backgroundImage: baseUrl + '/banner/02.jpg',
+    backgroundImage: baseUrl + '/background/02.jpg',
     summary:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt\n' +
-      'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe\n' +
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt' +
+      'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe' +
       'suscipit vero voluptatem!',
     summaryImage: baseUrl + '/summary/02.jpg',
   },
@@ -16,10 +18,10 @@ export const workshops = {
     name: 'Origami',
     path: '/origami',
     title: 'Taller de Origami',
-    backgroundImage: baseUrl + '/banner/origami.webp',
+    backgroundImage: baseUrl + '/background/origami.webp',
     summary:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt\n' +
-      'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe\n' +
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt' +
+      'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe' +
       'suscipit vero voluptatem!',
     summaryImage: baseUrl + '/summary/origami.jpeg',
   },
@@ -27,10 +29,10 @@ export const workshops = {
     name: 'Shogi',
     path: '/shogi',
     title: 'Taller de Shogi',
-    backgroundImage: baseUrl + '/banner/shogi.jpg',
+    backgroundImage: baseUrl + '/background/shogi.jpg',
     summary:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt\n' +
-      'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe\n' +
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt' +
+      'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe' +
       'suscipit vero voluptatem!',
     summaryImage: baseUrl + '/summary/shogi.jpg',
   },
@@ -38,20 +40,32 @@ export const workshops = {
     name: 'Papercraft',
     path: '/papercraft',
     title: 'Taller de Papercraft',
-    backgroundImage: baseUrl + '/banner/papercraft.jpg',
+    backgroundImage: baseUrl + '/background/papercraft.jpg',
     summary:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt\n' +
-      'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe\n' +
-      'suscipit vero voluptatem!',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis ' +
+      'deseruntadfadf earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe',
     summaryImage: baseUrl + '/summary/papercraft.jpg',
   },
   'hama-beads': {
     name: 'Hama Beads',
     path: '/hama-beads',
     title: 'Taller de Hama-Beads',
+    backgroundImage: baseUrl + '/background/papercraft.jpg',
     summary:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt\n' +
-      'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe\n' +
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt' +
+      'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe' +
       'suscipit vero voluptatem!',
+    summaryImage: baseUrl + '/summary/papercraft.jpg',
+  },
+  japones: {
+    name: 'Idioma Japonés',
+    path: '/japones',
+    title: 'Taller de Japonés',
+    backgroundImage: baseUrl + '/background/papercraft.jpg',
+    summary:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt' +
+      'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe' +
+      'suscipit vero voluptatem!',
+    summaryImage: baseUrl + '/summary/papercraft.jpg',
   },
 };

@@ -1,6 +1,6 @@
 import { IRoute } from '@/models';
 
-export const routes: IRoute[] = [
+export const headerRoutes: IRoute[] = [
   {
     name: 'Inicio',
     path: '/',

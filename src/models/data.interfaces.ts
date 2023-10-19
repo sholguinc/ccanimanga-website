@@ -4,6 +4,10 @@ export type FixedLengthArray<T, Length extends number> = [T, ...T[]] & {
   length: Length;
 };
 
+export type StringKeyObject<T> = {
+  [key: string]: T;
+};
+
 export enum SocialMediaSite {
   Facebook = 'facebook',
   Instagram = 'instagram',
@@ -36,4 +40,13 @@ export interface ISlide {
 export interface IRoute {
   name: string;
   path: string;
+}
+
+export interface IWorkshop {
+  name: string;
+  path: string;
+  title: string;
+  backgroundImage: string;
+  summary: string;
+  summaryImage: string;
 }
