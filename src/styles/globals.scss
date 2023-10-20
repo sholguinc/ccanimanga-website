@@ -4,6 +4,9 @@
 $main-background: $color-gray-20;
 $ccam-red: $coral-pink;
 
+// distances
+$distance-x-padding: min(8%, 80px);
+
 // text
 $color-text-primary: $color-white;
 $color-text-secondary: $color-white;
@@ -46,6 +49,7 @@ $text-color-button: $color-white;
 $button-border-radius: 100px;
 
 $padding-button-medium: 6px 10px;
+$padding-button-x-large: 8px 18px;
 $padding-button-xx-large: 10px 25px;
 
 // responsive design

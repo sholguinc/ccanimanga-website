@@ -3,9 +3,21 @@
   height: 100%;
 }
 
-@mixin set-size($size) {
-  width: $size;
-  height: $size;
+@mixin set-angle-size($size) {
+  $padding-distance: calc($distance-x-padding - $size + 10px);
+  
+  &__angle {
+    width: $size;
+    height: $size;
+  }
+
+  &__angle-left {
+    left: $padding-distance;
+  }
+
+  &__angle-right {
+    right: $padding-distance;
+  }
 }
 
 @mixin bullet-transition($property) {
@@ -13,7 +25,8 @@
 }
 
 .slider {
-  @include set-full;
+  width: 100%;
+  height: max(72vh, 560px);
   position: relative;
 
   &__swiper {
@@ -33,13 +46,15 @@
     position: absolute;
   }
 
+  // arrow angles
+  $angle-size: 60px;
+  @include set-angle-size(60px);
+
   &__angle {
     z-index: 20;
     cursor: pointer;
     color: $color-white;
     opacity: .7;
-
-    @include set-size(60px);
 
     position: absolute;
     top: 50%;
@@ -49,14 +64,6 @@
       opacity: .9;
       transition: opacity .2s ease-in-out;
     }
-  }
-
-  &__angle-left {
-    left: 20px;
-  }
-
-  &__angle-right {
-    right: 20px;
   }
 
   // pagination
@@ -89,19 +96,19 @@
 }
 
 @media (max-width: $lg) {
-  .slider__angle {
-      @include set-size(48px);
-    }
+  .slider {
+    @include set-angle-size(48px);
+  }
 }
 
 @media (max-width: $sm) {
-  .slider__angle {
-    @include set-size(40px);
+  .slider {
+    @include set-angle-size(40px);
   }
 }
 
 @media (max-width: $xsm) {
   .slider__angle {
-      display: none;
+    display: none;
   }
 }

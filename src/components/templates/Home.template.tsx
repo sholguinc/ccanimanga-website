@@ -1,15 +1,12 @@
-import { Button } from '@/components/atoms';
-import { Slider } from '@/components/organisms';
+import { Slider, InfoCard } from '@/components/organisms';
 
 import { slides } from '@/data';
 
 export const HomeTemplate = () => {
   return (
     <div className="home-template">
-      <section className="home-template__slider">
-        <Slider slides={slides} />
-      </section>
-      <Button text="Ir a Inicio" size="xx-large" to="/" />
+      <Slider slides={slides} />
+      <InfoCard />
       <p style={{ width: '20px' }}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
         consectetur ea eius, eum excepturi laborum ratione! Commodi dicta

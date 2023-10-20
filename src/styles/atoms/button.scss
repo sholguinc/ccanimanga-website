@@ -47,6 +47,17 @@
     }
   }
 
+  &.x-large {
+    border-width: 2px;
+    gap: 10px;
+    padding: $padding-button-x-large;
+
+    svg.arrow {
+      margin-top: 1.5px;
+      width: 15px;
+    }
+  }
+
   &.xx-large {
     border-width: 2px;
     gap: 10px;

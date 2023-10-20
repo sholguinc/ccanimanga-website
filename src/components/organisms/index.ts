@@ -4,3 +4,4 @@ export * from './CollapsedMenu.tsx';
 export * from './ActivitiesGrid.tsx';
 export * from './Slider.tsx';
 export * from './Background.tsx';
+export * from './InfoCard.tsx';

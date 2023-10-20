@@ -20,7 +20,7 @@ type WeightType = 'light' | 'regular' | 'semi-bold' | 'bold';
 type Familytype = 'quicksand' | 'noto-jp' | 'figtree';
 type TextTransformType = 'uppercase' | 'capitalize';
 
-type ButtonSizeType = 'medium' | 'xx-large';
+type ButtonSizeType = 'medium' | 'x-large' | 'xx-large';
 
 export interface IChildren {
   children: ChildrenType;
