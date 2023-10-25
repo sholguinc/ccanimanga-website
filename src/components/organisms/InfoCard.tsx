@@ -1,20 +1,37 @@
-import { Button } from '@/components/atoms';
+import { Button, Text } from '@/components/atoms';
 
-export const InfoCard = () => {
+import { IInfoCard } from '@/models';
+
+export const InfoCard = ({ title, text, image }: IInfoCard) => {
   return (
-    <div className="info-card">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-        aspernatur itaque iure laudantium nemo nisi numquam porro quibusdam quis
-        velit? Corporis deleniti deserunt et ipsam numquam porro praesentium quo
-        quos! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-        architecto asperiores dolore doloremque doloribus dolorum fugit id, in
-        ipsa laboriosam maxime minima molestias mollitia officia perferendis
-        quis repellendus temporibus vitae.
-      </p>
-      <Button to="/nosotros" />
-      <Button to="/nosotros" size="x-large" />
-      <Button to="/nosotros" size="xx-large" />
+    <div className="info-card__wrapper">
+      <div className="info-card">
+        <div className="info-card__content">
+          <Text
+            size="custom"
+            color="black"
+            weight="semi-bold"
+            family="hiro-misake"
+            className="info-card__title"
+          >
+            {title}
+          </Text>
+          <Text size="custom" className="info-card__description">
+            {text}
+          </Text>
+          <Button
+            to="/nosotros"
+            size="xx-large"
+            className="info-card__button"
+          />
+        </div>
+        <div className="info-card__figure">
+          <div className="info-card__circle-container">
+            <div className="info-card__circle" />
+          </div>
+          <img src={image} alt={title} className="info-card__image" />
+        </div>
+      </div>
     </div>
   );
 };

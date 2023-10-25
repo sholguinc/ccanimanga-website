@@ -19,6 +19,7 @@ export const Header = () => {
                 weight="semi-bold"
                 transform="uppercase"
                 family="figtree"
+                color="white"
               >
                 {route.name}
               </Text>

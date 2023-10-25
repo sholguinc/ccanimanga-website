@@ -1,19 +1,6 @@
 .text {
   font-family: $main-font;
 
-  // alternative types
-  &.primary {
-    color: $color-text-primary;
-  }
-
-  &.secondary {
-    color: $color-text-secondary;
-  }
-
-  &.tertiary {
-    color: $color-text-tertiary;
-  }
-
   // sizes
   &.small {
     font-size: $size-font-text-small;
@@ -94,6 +81,10 @@
 
   &.figtree {
     font-family: $figtree;
+  }
+
+  &.hiro-misake {
+    font-family: $hiro-misake;
   }
 
   // transform

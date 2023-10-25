@@ -1,5 +1,84 @@
-.info-card {
-  background-color: $color-white;
+$x-padding: $distance-x-padding;
+$y-padding: $distance-x-padding;
+$circle-size: 700px;
 
-  padding: 50px $distance-x-padding;
+@mixin img_position($circle-size) {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: $circle-size;
+}
+
+.info-card__wrapper {
+  width: 100%;
+  background-color: $color-white;
+  z-index: 100;
+}
+
+.info-card {
+  margin: 0 auto;
+  max-width: 90%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 52px;
+
+  &__content {
+    flex-basis: 52%;
+
+    padding: $y-padding 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__button {
+    align-self: center;
+  }
+
+  &__figure {
+    width: $circle-size;
+    position: relative;
+
+    // crop
+    //clip-path: polygon(0 -1000%, 100% -1000%, 100% 100%, 0 100%);
+  }
+
+  &__circle-container {
+    width: $circle-size;
+    height: 100%;
+    position: relative;
+
+    // crop
+    overflow: hidden;
+  }
+
+  &__circle {
+    height: $circle-size;
+    border-radius: 100%;
+    background-color: $ccam-red;
+
+    @include img_position($circle-size)
+  }
+
+  &__image {
+    @include img_position($circle-size)
+  }
+
+  // text
+  &__title {
+    font-size: 3rem;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: justify;
+
+    margin-bottom: 20px;
+  }
 }

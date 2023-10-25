@@ -1,9 +1,8 @@
 import { IText } from '@/models';
 
 export const Text = ({
-  type = 'primary',
   size = 'medium',
-  color,
+  color = 'black',
   weight = 'regular',
   family,
   transform,
@@ -12,7 +11,6 @@ export const Text = ({
 }: IText) => {
   const classNames = [
     'text',
-    type,
     size,
     weight,
     family ?? '',

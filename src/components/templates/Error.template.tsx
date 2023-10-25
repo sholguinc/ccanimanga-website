@@ -4,11 +4,23 @@ import { IErrorTemplate } from '@/models';
 export const ErrorTemplate = ({ text, subtext }: IErrorTemplate) => {
   return (
     <div className="error-template">
-      <Text className="main-text" family="figtree" weight="bold">
+      <Text
+        className="main-text"
+        size="custom"
+        family="figtree"
+        weight="bold"
+        color="white"
+      >
         {text}
       </Text>
       {subtext && (
-        <Text className="sub-text" family="figtree" weight="bold">
+        <Text
+          className="sub-text"
+          size="custom"
+          family="figtree"
+          weight="bold"
+          color="white"
+        >
           {subtext}
         </Text>
       )}

@@ -5,7 +5,7 @@
 
 @mixin set-angle-size($size) {
   $padding-distance: calc($distance-x-padding - $size + 10px);
-  
+
   &__angle {
     width: $size;
     height: $size;

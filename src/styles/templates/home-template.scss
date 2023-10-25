@@ -1,3 +1,8 @@
 .home-template {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 100px;
 }

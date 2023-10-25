@@ -33,8 +33,8 @@ export interface IActivityData {
 }
 
 export interface ISlide {
-  alt: string;
   src: string;
+  alt: string;
 }
 
 export interface IRoute {

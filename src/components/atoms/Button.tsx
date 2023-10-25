@@ -8,9 +8,14 @@ export const Button = ({
   size = 'medium',
   invert = false,
   to,
+  className,
 }: IButton) => {
   return (
-    <DelayLink to={to} className={`button ${size}`} data-invert={invert}>
+    <DelayLink
+      to={to}
+      className={`button ${size} ${className}`}
+      data-invert={invert}
+    >
       <Text size={size} weight="bold">
         {text}
       </Text>
