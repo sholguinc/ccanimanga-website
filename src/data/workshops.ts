@@ -5,67 +5,73 @@ const baseUrl = '/images/workshops';
 export const workshops: StringKeyObject<IWorkshop> = {
   manga: {
     name: 'Manga',
-    path: '/manga',
+    path: '/talleres/manga',
     title: 'Taller de Manga',
     backgroundImage: baseUrl + '/background/manga.jpg',
-    summary:
+    description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt' +
       'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe' +
       'suscipit vero voluptatem!',
-    summaryImage: baseUrl + '/summary/02.jpg',
+    descriptionImage: baseUrl + '/description/manga.jpg',
+    figure: baseUrl + '/figure/manga.png',
   },
   origami: {
     name: 'Origami',
-    path: '/origami',
+    path: '/talleres/origami',
     title: 'Taller de Origami',
     backgroundImage: baseUrl + '/background/origami.webp',
-    summary:
+    description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt' +
       'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe' +
       'suscipit vero voluptatem!',
-    summaryImage: baseUrl + '/summary/origami.jpeg',
+    descriptionImage: baseUrl + '/description/origami.jpeg',
+    figure: baseUrl + '/figure/origami.png',
   },
   shogi: {
     name: 'Shogi',
-    path: '/shogi',
+    path: '/talleres/shogi',
     title: 'Taller de Shogi',
     backgroundImage: baseUrl + '/background/shogi.jpg',
-    summary:
+    description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt' +
       'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe' +
       'suscipit vero voluptatem!',
-    summaryImage: baseUrl + '/summary/shogi.jpg',
+    descriptionImage: baseUrl + '/description/shogi.jpg',
+    figure: baseUrl + '/figure/shogi.png',
   },
   papercraft: {
     name: 'Papercraft',
-    path: '/papercraft',
+    path: '/talleres/papercraft',
     title: 'Taller de Papercraft',
     backgroundImage: baseUrl + '/background/papercraft.jpg',
-    summary:
+    description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis ' +
       'deseruntadfadf earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe',
-    summaryImage: baseUrl + '/summary/papercraft.jpg',
+    descriptionImage: baseUrl + '/description/papercraft.jpg',
+    figure: baseUrl + '/figure/papercraft.png',
   },
   'hama-beads': {
     name: 'Hama Beads',
-    path: '/hama-beads',
+    path: '/talleres/hama-beads',
     title: 'Taller de Hama-Beads',
     backgroundImage: baseUrl + '/background/papercraft.jpg',
-    summary:
+    description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt' +
       'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe' +
       'suscipit vero voluptatem!',
-    summaryImage: baseUrl + '/summary/papercraft.jpg',
+    descriptionImage: baseUrl + '/description/papercraft.jpg',
+    figure: baseUrl + '/figure/hama-beads.png',
   },
   japones: {
     name: 'Idioma Japonés',
-    path: '/japones',
+    path: '/talleres/japones',
     title: 'Taller de Japonés',
     backgroundImage: baseUrl + '/background/papercraft.jpg',
-    summary:
+    description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae corporis deserunt' +
       'earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe' +
       'suscipit vero voluptatem!',
-    summaryImage: baseUrl + '/summary/papercraft.jpg',
+    descriptionImage: baseUrl + '/description/papercraft.jpg',
+    figure: baseUrl + '/figure/japones.png',
   },
 };

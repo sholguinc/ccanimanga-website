@@ -11,5 +11,11 @@
     background-attachment: fixed;
     background-size: 500px;
     background-repeat: repeat repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 100px;
   }
 }

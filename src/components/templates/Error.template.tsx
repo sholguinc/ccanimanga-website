@@ -3,7 +3,7 @@ import { IErrorTemplate } from '@/models';
 
 export const ErrorTemplate = ({ text, subtext }: IErrorTemplate) => {
   return (
-    <div className="error-template">
+    <section className="error-template">
       <Text
         className="main-text"
         size="custom"
@@ -29,6 +29,6 @@ export const ErrorTemplate = ({ text, subtext }: IErrorTemplate) => {
       <div className="overlay-border top-left vertical"></div>
       <div className="overlay-border bottom-right horizontal"></div>
       <div className="overlay-border bottom-right vertical"></div>
-    </div>
+    </section>
   );
 };

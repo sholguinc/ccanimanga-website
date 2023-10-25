@@ -47,6 +47,7 @@ export interface IWorkshop {
   path: string;
   title: string;
   backgroundImage: string;
-  summary: string;
-  summaryImage: string;
+  description: string;
+  descriptionImage: string;
+  figure: string;
 }

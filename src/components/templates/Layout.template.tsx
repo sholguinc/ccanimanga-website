@@ -6,13 +6,13 @@ import { Header, Footer } from '@/components/organisms';
 export const LayoutTemplate = () => {
   return (
     <div className="layout-template">
-      <main className="layout-template__body">
-        <Scrollbar>
-          <Header />
+      <Scrollbar>
+        <Header />
+        <main className="layout-template__body">
           <Outlet />
-          <Footer />
-        </Scrollbar>
-      </main>
+        </main>
+        <Footer />
+      </Scrollbar>
     </div>
   );
 };

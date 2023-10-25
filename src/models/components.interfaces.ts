@@ -84,6 +84,7 @@ export interface IInfoCard {
   title: string;
   text: string;
   image: string;
+  to: string;
 }
 
 // Templates
@@ -98,4 +99,8 @@ export interface ILoadingTemplate {
 
 export interface IWorkshopTemplate {
   workshop: IWorkshop;
+}
+
+export interface IWorkshopsTemplate {
+  workshops: IWorkshop[];
 }

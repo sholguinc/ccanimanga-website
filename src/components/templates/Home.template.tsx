@@ -5,7 +5,7 @@ import Anigirl from '@/assets/images/artist.png';
 
 export const HomeTemplate = () => {
   return (
-    <div className="home-template">
+    <>
       <Slider slides={slides} />
       <InfoCard
         title="Quienes Somos :"
@@ -21,6 +21,7 @@ export const HomeTemplate = () => {
         laborum ratione! Commodi dicta dolores eius et incidunt laborum maxime
         mollitia nobis, nulla sed voluptate voluptatem! Lorem ipsum dolor sit
         amet, consectetur adipisicing elit. Atque consectetur ea eius"
+        to="/nosotros"
       />
       <p style={{ width: '20px' }}>
         , eum excepturi laborum ratione! Commodi dicta dolores eius et incidunt
@@ -49,6 +50,6 @@ export const HomeTemplate = () => {
         dolores eius et incidunt laborum maxime mollitia nobis, nulla sed
         voluptate voluptatem!
       </p>
-    </div>
+    </>
   );
 };
