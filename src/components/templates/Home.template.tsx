@@ -1,5 +1,7 @@
+import { Logos } from '@/components/molecules';
 import { Slider, InfoCard, Activities } from '@/components/organisms';
 
+import { logosUNI } from '@/data';
 import Anigirl from '@/assets/images/artist.png';
 
 export const HomeTemplate = () => {
@@ -23,33 +25,7 @@ export const HomeTemplate = () => {
         to="/nosotros"
       />
       <Activities />
-      <p style={{ width: '20px' }}>
-        , eum excepturi laborum ratione! Commodi dicta dolores eius et incidunt
-        laborum maxime mollitia nobis, nulla sed voluptate voluptatem! Lorem
-        ipsum dolor sit amet, consectetur adipisicing elit. Atque consectetur ea
-        eius, eum excepturi laborum ratione! Commodi dicta dolores eius et
-        incidunt laborum maxime mollitia nobis, nulla sed voluptate voluptatem!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
-        consectetur ea eius, eum excepturi laborum ratione! Commodi dicta
-        dolores eius et incidunt laborum maxime mollitia nobis, nulla sed
-        voluptate voluptatem! Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Atque consectetur ea eius, eum excepturi laborum
-        ratione! Commodi dicta dolores eius et incidunt laborum maxime mollitia
-        nobis, nulla sed voluptate voluptatem!vv Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Atque consectetur ea eius, eum excepturi
-        laborum ratione! Commodi dicta dolores eius et incidunt laborum maxime
-        mollitia nobis, nulla sed voluptate voluptatem! Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Atque consectetur ea eius, eum
-        excepturi laborum ratione! Commodi dicta dolores eius et incidunt
-        laborum maxime mollitia nobis, nulla sed voluptate voluptatem! Lorem
-        ipsum dolor sit amet, consectetur adipisicing elit. Atque consectetur ea
-        eius, eum excepturi laborum ratione! Commodi dicta dolores eius et
-        incidunt laborum maxime mollitia nobis, nulla sed voluptate voluptatem!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
-        consectetur ea eius, eum excepturi laborum ratione! Commodi dicta
-        dolores eius et incidunt laborum maxime mollitia nobis, nulla sed
-        voluptate voluptatem!
-      </p>
+      <Logos logos={logosUNI} />
     </>
   );
 };

@@ -10,12 +10,7 @@ export const Footer = () => {
             <SocialMediaList invert={true} gap={15} />
           </div>
           <OrganizationList />
-          <Text
-            type="tertiary"
-            weight="light"
-            family="noto-jp"
-            className="footer__country"
-          >
+          <Text weight="light" family="noto-jp" className="footer__country">
             Lima, Perú
           </Text>
         </div>

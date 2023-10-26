@@ -52,3 +52,8 @@ export interface IWorkshop {
   descriptionImage: string;
   figure: string;
 }
+
+export interface ILogo {
+  name: string;
+  img: string;
+}
