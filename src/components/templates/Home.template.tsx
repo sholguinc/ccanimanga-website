@@ -1,12 +1,11 @@
-import { Slider, InfoCard } from '@/components/organisms';
-import { slides } from '@/data';
+import { Slider, InfoCard, Activities } from '@/components/organisms';
 
 import Anigirl from '@/assets/images/artist.png';
 
 export const HomeTemplate = () => {
   return (
     <>
-      <Slider slides={slides} />
+      <Slider />
       <InfoCard
         title="Quienes Somos :"
         image={Anigirl}
@@ -23,6 +22,7 @@ export const HomeTemplate = () => {
         amet, consectetur adipisicing elit. Atque consectetur ea eius"
         to="/nosotros"
       />
+      <Activities />
       <p style={{ width: '20px' }}>
         , eum excepturi laborum ratione! Commodi dicta dolores eius et incidunt
         laborum maxime mollitia nobis, nulla sed voluptate voluptatem! Lorem

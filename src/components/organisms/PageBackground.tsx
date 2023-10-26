@@ -1,18 +1,18 @@
 import { IBackground } from '@/models';
 
-export const Background = ({
+export const PageBackground = ({
   children,
   src,
   alt,
-  brightness = 1,
+  brightness = 0.3,
 }: IBackground) => {
   return (
     <>
       <figure
-        className="background"
+        className="page-background"
         style={{ filter: `brightness(${brightness})` }}
       >
-        <img src={src} alt={alt} className="background__image" />
+        <img src={src} alt={alt} className="page-background__image" />
       </figure>
       {children}
     </>

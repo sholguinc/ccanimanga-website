@@ -1,20 +1,21 @@
-import { Link } from 'react-router-dom';
+import { Text, Button, Background } from '@/components/atoms';
 
-import { Text } from '@/components/atoms';
 import { IActivity } from '@/models';
 
-export const Activity = ({ data }: IActivity) => {
+export const Activity = ({ activity }: IActivity) => {
   return (
-    <Link to={data.path} className={`activity ${data.name}`}>
-      <figure className="activity__figure">
-        <img src={data.background} alt={data.name} className="activity__img" />
-      </figure>
-
-      <div className="activity__name">
-        <Text size="xx-large" weight="semi-bold">
-          {data.name}
-        </Text>
-      </div>
-    </Link>
+    <div className="activity">
+      <Background
+        src={activity.background}
+        alt={activity.name}
+        brightness={0.5}
+      >
+        <div className="activity__content">
+          <Text>{activity.name}</Text>
+          <Text>{activity.description}</Text>
+          <Button to={activity.path} />
+        </div>
+      </Background>
+    </div>
   );
 };

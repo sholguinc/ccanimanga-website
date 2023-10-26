@@ -1,0 +1,30 @@
+import { IActivityData, FixedLengthArray } from '@/models';
+
+const baseUrl = '/images/activities';
+
+export const activities: FixedLengthArray<IActivityData, 4> = [
+  {
+    name: 'Talleres',
+    description: 'de manga, origami, shogi, etc.',
+    path: '/talleres',
+    background: baseUrl + '/talleres.jpg',
+  },
+  {
+    name: 'Proyecciones',
+    description: 'de series y películas anime',
+    path: '/proyecciones',
+    background: baseUrl + '/proyecciones.jpg',
+  },
+  {
+    name: 'UNI Japan Week',
+    description: 'nuestro mayor evento anual',
+    path: '/uni-japan-week',
+    background: baseUrl + '/uni-japan-week.jpg',
+  },
+  {
+    name: 'Otras Actividades',
+    description: 'dentro y fuera de la UNI',
+    path: '/otras-actividades',
+    background: baseUrl + '/otras-actividades.jpg',
+  },
+];

@@ -3,14 +3,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { ISlider } from '@/models';
+import { slides } from '@/data';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
-export const Slider = ({ slides }: ISlider) => {
+export const Slider = () => {
   return (
     <div className="slider">
       <Swiper

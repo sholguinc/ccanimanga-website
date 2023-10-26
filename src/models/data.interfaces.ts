@@ -28,6 +28,7 @@ export interface IOrganization {
 
 export interface IActivityData {
   name: string;
+  description: string;
   path: string;
   background: string;
 }

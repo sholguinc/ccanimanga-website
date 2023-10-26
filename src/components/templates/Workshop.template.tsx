@@ -1,15 +1,11 @@
-import { Background } from '@/components/organisms';
+import { PageBackground } from '@/components/organisms';
 
 import { IWorkshopTemplate } from '@/models';
 
 export const WorkshopTemplate = ({ workshop }: IWorkshopTemplate) => {
   return (
-    <Background
-      src={workshop.backgroundImage}
-      alt={workshop.name}
-      brightness={0.3}
-    >
+    <PageBackground src={workshop.backgroundImage} alt={workshop.name}>
       <div className="workshop-template">{workshop.name}</div>
-    </Background>
+    </PageBackground>
   );
 };

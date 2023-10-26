@@ -1,0 +1,40 @@
+@mixin set-full {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin set-full-absolute {
+  @include set-full;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.background__container {
+  position: relative;
+  @include set-full;
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: $color-white;
+
+  &__image {
+    @include set-full;
+    object-fit: cover;
+  }
+}
+
+.background__children {
+  @include set-full-absolute;
+  z-index: 1;
+}
