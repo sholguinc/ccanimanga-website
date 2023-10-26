@@ -11,9 +11,23 @@ export const Activity = ({ activity }: IActivity) => {
         brightness={0.5}
       >
         <div className="activity__content">
-          <Text>{activity.name}</Text>
-          <Text>{activity.description}</Text>
-          <Button to={activity.path} />
+          <Text
+            family="hiro-misake"
+            color="white"
+            size="custom"
+            className="activity__name"
+          >
+            {activity.name}
+          </Text>
+          <Text
+            family="quicksand"
+            color="white"
+            size="custom"
+            className="activity__description"
+          >
+            {activity.description}
+          </Text>
+          <Button to={activity.path} size="x-large" />
         </div>
       </Background>
     </div>
