@@ -1,48 +1,49 @@
-//@mixin grid-cols($num) {
-//  grid-template-columns: repeat($num, minmax(0, 1fr));
-//}
-//
-//@mixin aspect-ratio($w, $h) {
-//  .activity {
-//    aspect-ratio: calc($w / $h);
-//  }
-//}
-//
-//.activities-grid {
-//  display: grid;
-//  @include grid-cols(5);
-//  @include aspect-ratio(2, 3)
-//}
-//
-//@media (min-width: $sm) and (max-width: $lg) {
-//  .activities-grid {
-//    @include grid-cols(3);
-//    @include aspect-ratio(1, 1);
-//
-//    & > :last-child {
-//      grid-row: 1 / 3;
-//      grid-column-end: -1;
-//      aspect-ratio: 1 / 2;
-//    }
-//  }
-//}
-//
-//@media (min-width: $xsm) and (max-width: $sm) {
-//  .activities-grid {
-//    @include grid-cols(2);
-//    @include aspect-ratio(1, 1);
-//
-//    & > :last-child {
-//      grid-row-start: 3;
-//      grid-column: span 2 / span 2;
-//      aspect-ratio: 2 / 1;
-//    }
-//  }
-//}
-//
-//@media (max-width: $xsm) {
-//  .activities-grid {
-//    @include grid-cols(1);
-//    @include aspect-ratio(2, 1);
-//  }
-//}
+.header__container, .activity__container {
+  position: relative;
+}
+
+.stroke {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  z-index: 20;
+  fill: $medium-red-violet;
+
+  $angle: 2deg;
+
+  &.odd {
+    transform: translate(-50%, 50%) scaleX(2.2) rotate($angle);
+  }
+
+  &.even {
+    transform: translate(-50%, 50%) scaleX(2.2) rotate(-1 * $angle);
+  }
+
+  // header
+  &.stroke-header-top {
+    top: 0;
+    fill: $color-white;
+    z-index: 5;
+    transform: translate(-50%, -50%) scaleX(2.2) rotate($angle);
+  }
+
+  &.stroke-header-bottom {
+    transform: translate(-50%, 50%) scaleX(-2.1) rotate($angle);
+  }
+}
+
+.activities {
+  &__header {
+    background-color: $color-white;
+    padding: 10px $distance-x-padding 36px;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__title {
+    font-size: 3rem;
+  }
+}
