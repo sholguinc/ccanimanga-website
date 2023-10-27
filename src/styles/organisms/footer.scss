@@ -37,15 +37,48 @@
   }
 }
 
-@media (max-width: $sm) {
+@media (max-width: $lg) {
   .footer {
+    &__follow-us {
+      display: none;
+    }
+
     &__social-media {
+      padding-bottom: 16px;
+
+      transform: none;
+      top: 0;
+      right: 0;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
 
-      padding-bottom: 15px;
+      .social-media {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    &__copyright {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .footer {
+
+    &__social-media {
+      .social-media {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    &__copyright {
+      margin-top: 12px;
+      margin-bottom: 0;
     }
   }
 }
