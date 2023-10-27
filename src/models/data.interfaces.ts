@@ -11,6 +11,8 @@ export type StringKeyObject<T> = {
 export enum SocialMediaSite {
   Facebook = 'facebook',
   Instagram = 'instagram',
+  TikTok = 'tiktok',
+  Email = 'email',
 }
 
 export type ISocialMediaIcons = {

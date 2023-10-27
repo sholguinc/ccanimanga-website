@@ -16,7 +16,7 @@ export const Header = () => {
             <DelayLink to={route.path}>
               <Text
                 size="larger"
-                weight="semi-bold"
+                weight="bold-medium"
                 transform="uppercase"
                 family="figtree"
                 color="white"

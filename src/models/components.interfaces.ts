@@ -16,7 +16,7 @@ type TextSizeType =
   | 'x-large'
   | 'xx-large'
   | 'custom';
-type WeightType = 'light' | 'regular' | 'semi-bold' | 'bold';
+type WeightType = 'light' | 'regular' | 'semi-bold' | 'bold-medium' | 'bold';
 type Familytype = 'quicksand' | 'noto-jp' | 'figtree' | 'hiro-misake';
 type TextTransformType = 'uppercase' | 'capitalize';
 

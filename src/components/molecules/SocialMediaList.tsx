@@ -18,6 +18,12 @@ export const SocialMediaList = ({
       <li>
         <SocialMedia site={SocialMediaSite.Instagram} invert={invert} />
       </li>
+      <li>
+        <SocialMedia site={SocialMediaSite.TikTok} invert={invert} />
+      </li>
+      <li>
+        <SocialMedia site={SocialMediaSite.Email} invert={invert} />
+      </li>
     </ul>
   );
 };
