@@ -1,6 +1,5 @@
 $x-padding: $distance-x-padding;
 $y-padding: $distance-x-padding;
-$circle-size: 700px;
 
 @mixin img_position($circle-size) {
   position: absolute;
@@ -8,6 +7,37 @@ $circle-size: 700px;
   left: 0;
   transform: translateY(-50%);
   width: $circle-size;
+}
+
+@mixin set-circle-figure($circle-size) {
+  &__figure {
+    width: $circle-size;
+    position: relative;
+
+    // crop
+    //clip-path: polygon(0 -1000%, 100% -1000%, 100% 100%, 0 100%);
+  }
+
+  &__circle-container {
+    width: $circle-size;
+    height: 100%;
+    position: relative;
+
+    // crop
+    overflow: hidden;
+  }
+
+  &__circle {
+    height: $circle-size;
+    border-radius: 100%;
+    background-color: $ccam-red;
+
+    @include img_position($circle-size)
+  }
+
+  &__image {
+    @include img_position($circle-size)
+  }
 }
 
 .info-card__wrapper {
@@ -40,34 +70,8 @@ $circle-size: 700px;
     align-self: center;
   }
 
-  &__figure {
-    width: $circle-size;
-    position: relative;
-
-    // crop
-    //clip-path: polygon(0 -1000%, 100% -1000%, 100% 100%, 0 100%);
-  }
-
-  &__circle-container {
-    width: $circle-size;
-    height: 100%;
-    position: relative;
-
-    // crop
-    overflow: hidden;
-  }
-
-  &__circle {
-    height: $circle-size;
-    border-radius: 100%;
-    background-color: $ccam-red;
-
-    @include img_position($circle-size)
-  }
-
-  &__image {
-    @include img_position($circle-size)
-  }
+  // circle-figure
+  @include set-circle-figure(700px);
 
   // text
   &__title {
@@ -80,5 +84,57 @@ $circle-size: 700px;
     text-align: justify;
 
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: $xl2) {
+  .info-card {
+    gap: 80px;
+    @include set-circle-figure(600px);
+  }
+}
+
+@media (max-width: $xl) {
+  .info-card {
+    &__title {
+      font-size: 2.6rem;
+    }
+
+    @include set-circle-figure(520px);
+  }
+}
+
+@media (max-width: $lg) {
+  .info-card {
+    @include set-circle-figure(44vw);
+
+    &__description {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .info-card {
+    align-items: center;
+    flex-direction: column;
+
+    @include set-circle-figure(500px);
+
+    &__circle-container {
+      height: 500px;
+    }
+
+    &__content {
+      padding: $y-padding 0 40px 0;
+    }
+
+    &__figure {
+      margin-bottom: 40px;
+    }
+
+    &__description {
+      margin-bottom: 4px;
+    }
   }
 }

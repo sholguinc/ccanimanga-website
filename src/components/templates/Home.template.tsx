@@ -17,11 +17,7 @@ export const HomeTemplate = () => {
         voluptate voluptatem! Lorem ipsum dolor sit amet, consectetur
         adipisicing elit. Atque consectetur ea eius, eum excepturi laborum
         ratione! Commodi dicta dolores eius et incidunt laborum maxime mollitia
-        nobis, nulla sed voluptate voluptatem! Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Atque consectetur ea eius, eum excepturi
-        laborum ratione! Commodi dicta dolores eius et incidunt laborum maxime
-        mollitia nobis, nulla sed voluptate voluptatem! Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Atque consectetur ea eius"
+        nobis, nulla sed voluptate voluptatem!"
         to="/nosotros"
       />
       <Activities />

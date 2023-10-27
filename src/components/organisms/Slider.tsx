@@ -32,7 +32,6 @@ export const Slider = () => {
           disableOnInteraction: false,
         }}
         loop={true}
-        allowTouchMove={false}
         className="slider__swiper"
       >
         {slides.map((slide, index) => (

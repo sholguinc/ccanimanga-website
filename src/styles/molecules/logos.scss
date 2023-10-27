@@ -1,3 +1,13 @@
+@mixin set-width-logo($logo-width) {
+  .logos {
+    grid-template-columns: repeat(4, $logo-width);
+  }
+
+  .logo {
+    width: $logo-width;
+  }
+}
+
 .logos__container {
   background-color: $color-white;
   margin: 16px 0 72px;
@@ -7,17 +17,48 @@
 .logos {
   padding: 24px 0;
 
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 120px;
+  align-items: center;
+  place-items: center;
+  gap: 10%;
 
   border-style: solid;
   border-color: $ccam-red;
   border-width: 2px 0;
 }
 
-.logo {
-  width: 200px;
+@include set-width-logo(200px);
+
+@media (max-width: $xl) {
+  @include set-width-logo(160px);
+}
+
+@media (max-width: $lg) {
+  .logos {
+    gap: 5%;
+  }
+}
+
+@media (max-width: $md) {
+  .logos {
+    gap: 1%;
+  }
+
+  @include set-width-logo(148px);
+}
+
+@media (max-width: $sm) {
+  $logo-width: 148px;
+
+  .logos {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, $logo-width);
+    gap: 0 15%;
+  }
+
+  .logo {
+    width: $logo-width;
+  }
 }
