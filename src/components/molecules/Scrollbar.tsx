@@ -2,12 +2,12 @@ import { useContext } from 'react';
 import SimpleBar from 'simplebar-react';
 
 import { IChildren } from '@/models';
-import { MenuContext } from '@/context';
+import { ScrollContext } from '@/context';
 
 import 'simplebar/dist/simplebar.min.css';
 
 export const Scrollbar = ({ children }: IChildren) => {
-  const { scrollableNodeRef } = useContext(MenuContext);
+  const { scrollableNodeRef } = useContext(ScrollContext);
 
   return (
     <SimpleBar

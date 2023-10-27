@@ -1,12 +1,12 @@
 import React from 'react';
+import { LinkProps } from 'react-router-dom';
 
-import { IActivityData, SocialMediaSite } from '@/models';
+import { IActivityData, SocialMediaSite, IWorkshop, ILogo } from '@/models';
 
 // Base
 type ChildrenType = string | React.ReactNode;
 export type HTMLDivType = HTMLDivElement | null;
 
-type AlternativeType = 'primary' | 'secondary' | 'tertiary';
 type ColorType = 'black' | 'gray' | 'white' | 'deep-blue' | 'ccam-red';
 type TextSizeType =
   | 'small'
@@ -14,25 +14,30 @@ type TextSizeType =
   | 'large'
   | 'larger'
   | 'x-large'
-  | 'xx-large';
-type WeightType = 'light' | 'regular' | 'semi-bold' | 'bold';
-type Familytype = 'quicksand' | 'noto-jp' | 'figtree';
+  | 'xx-large'
+  | 'custom';
+type WeightType = 'light' | 'regular' | 'semi-bold' | 'bold-medium' | 'bold';
+type Familytype = 'quicksand' | 'noto-jp' | 'figtree' | 'hiro-misake';
+type TextTransformType = 'uppercase' | 'capitalize';
 
-type ButtonSizeType = 'medium' | 'xx-large';
+type ButtonSizeType = 'medium' | 'x-large' | 'xx-large';
 
 export interface IChildren {
   children: ChildrenType;
 }
 
+export interface IClassName {
+  className?: string;
+}
+
 // Atoms
-export interface IText {
+export interface IText extends IClassName {
   children: string;
-  type?: AlternativeType;
   color?: ColorType;
   size?: TextSizeType;
   weight?: WeightType;
   family?: Familytype;
-  className?: string;
+  transform?: TextTransformType;
 }
 
 export interface IHamburger {
@@ -44,11 +49,19 @@ export interface ISocialMedia {
   invert?: boolean;
 }
 
-export interface IButton {
+export type IDelayLink = IChildren & LinkProps;
+
+export interface IButton extends IClassName {
   text?: string;
   size?: ButtonSizeType;
   invert?: boolean;
-  redirectTo: string;
+  to: string;
+}
+
+export interface IBackground extends IChildren {
+  src: string;
+  alt: string;
+  brightness?: number;
 }
 
 // Molecules
@@ -59,13 +72,35 @@ export interface ISocialMediaList {
 }
 
 export interface IActivity {
-  data: IActivityData;
+  activity: IActivityData;
+}
+
+export interface ILogos {
+  logos: ILogo[];
 }
 
 // Organisms
+export interface IInfoCard {
+  title: string;
+  text: string;
+  image: string;
+  to: string;
+}
 
 // Templates
 export interface IErrorTemplate {
   text: string;
   subtext?: string;
+}
+
+export interface ILoadingTemplate {
+  duration: number;
+}
+
+export interface IWorkshopTemplate {
+  workshop: IWorkshop;
+}
+
+export interface IWorkshopsTemplate {
+  workshops: IWorkshop[];
 }

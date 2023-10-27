@@ -7,16 +7,19 @@ export const Footer = () => {
       <div className="footer__content">
         <div className="footer__text">
           <div className="footer__social-media">
-            <SocialMediaList invert={true} gap={15} />
+            <Text
+              size="larger"
+              color="ccam-red"
+              weight="bold-medium"
+              className="footer__follow-us"
+            >
+              Síguenos:
+            </Text>
+            <SocialMediaList invert={true} gap={10} />
           </div>
           <OrganizationList />
-          <Text
-            type="tertiary"
-            weight="light"
-            family="noto-jp"
-            className="footer__country"
-          >
-            Lima, Perú
+          <Text weight="light" family="noto-jp" className="footer__copyright">
+            &copy; 2023 • Sergio Holguín • Lima, Perú
           </Text>
         </div>
         <AngleUp />

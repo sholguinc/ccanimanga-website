@@ -1,6 +1,19 @@
 $icon-color: $ccam-red;
 $bg-color: $color-white;
 
+@mixin toBounce {
+  animation: bounce-kf .64s ease-in-out;
+
+  @keyframes bounce-kf {
+    0%, 50%, 100% {
+      transform: translateY(0);
+    }
+    25%, 75% {
+      transform: translateY(-10%);
+    }
+  }
+}
+
 .social-media {
   display: flex;
   align-items: center;
@@ -23,5 +36,9 @@ $bg-color: $color-white;
     .social-media__icon {
       color: $bg-color;
     }
+  }
+
+  &:hover {
+    @include toBounce;
   }
 }

@@ -4,10 +4,8 @@
 $main-background: $color-gray-20;
 $ccam-red: $coral-pink;
 
-// text
-$color-text-primary: $color-white;
-$color-text-secondary: $color-white;
-$color-text-tertiary: $color-black;
+// distances
+$distance-x-padding: min(8%, 80px);
 
 // text color type
 $black: $color-black;
@@ -22,6 +20,7 @@ $main-font: $quicksand;
 $weight-font-light: 300;
 $weight-font-regular: 400; // (default)
 $weight-font-semi-bold: 500;
+$weight-font-bold-medium: 600;
 $weight-font-bold: 700;
 
 // fonts-sizes
@@ -46,6 +45,7 @@ $text-color-button: $color-white;
 $button-border-radius: 100px;
 
 $padding-button-medium: 6px 10px;
+$padding-button-x-large: 8px 18px;
 $padding-button-xx-large: 10px 25px;
 
 // responsive design

@@ -1,16 +1,5 @@
 .text {
-  // alternative types
-  &.primary {
-    color: $color-text-primary;
-  }
-
-  &.secondary {
-    color: $color-text-secondary;
-  }
-
-  &.tertiary {
-    color: $color-text-tertiary;
-  }
+  font-family: $main-font;
 
   // sizes
   &.small {
@@ -77,6 +66,10 @@
     font-weight: $weight-font-semi-bold;
   }
 
+  &.bold-medium {
+    font-weight: $weight-font-bold-medium;
+  }
+
   &.bold {
     font-weight: $weight-font-bold;
   }
@@ -92,5 +85,18 @@
 
   &.figtree {
     font-family: $figtree;
+  }
+
+  &.hiro-misake {
+    font-family: $hiro-misake;
+  }
+
+  // transform
+  &.uppercase {
+    text-transform: uppercase;
+  }
+
+  &.capitalize {
+    text-transform: capitalize;
   }
 }

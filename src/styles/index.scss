@@ -5,22 +5,27 @@
 @import "./atoms/text.scss";
 @import "./atoms/angle-up.scss";
 @import "./atoms/social-media.scss";
+@import "./atoms/delay-link.scss";
 @import "./atoms/button.scss";
+@import "./atoms/background.scss";
 
 //import molecules
 @import "./molecules/scrollbar.scss";
 @import "./molecules/organization-list.scss";
 @import "./molecules/social-media-list.scss";
 @import "./molecules/activity.scss";
+@import "./molecules/logos.scss";
 
 //import organisms
+@import "./organisms/header.scss";
 @import "./organisms/footer.scss";
-@import "./organisms/collapsed-menu";
-@import "./organisms/activities-grid.scss";
+@import "./organisms/collapsed-menu.scss";
+@import "./organisms/activities.scss";
+@import "./organisms/slider.scss";
+@import "./organisms/page-background.scss";
+@import "./organisms/info-card.scss";
 
 //import templates
-//@import "./templates/home-template.scss";
 @import "./templates/layout-template.scss";
 @import "./templates/error-template.scss";
-
-//import pages
+@import "./templates/loading-template.scss";

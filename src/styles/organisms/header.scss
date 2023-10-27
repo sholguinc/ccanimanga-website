@@ -1,0 +1,90 @@
+@mixin border-animation($border-color) {
+  &:after {
+    content: "";
+    display: block;
+    width: 0;
+    padding-top: 1px;
+    border-bottom: 1.5px solid $border-color;
+    transition: .5s;
+    margin: auto;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+}
+
+.header {
+  padding: 0 $distance-x-padding;
+  height: 156px;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  z-index: 50;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+
+  &__logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: fit-content;
+
+    img {
+      width: 220px;
+    }
+  }
+
+  &__routes {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    padding-right: 10px;
+  }
+
+  &__route a {
+    @include border-animation($color-white);
+  }
+}
+
+@media (max-width: $lg) {
+  .header {
+    height: 140px;
+
+    &__logo img {
+      width: 200px;
+    }
+
+    &__routes {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .header {
+    height: 120px;
+    padding: 0 20px;
+
+    &__routes {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $xsm) {
+  .header {
+    &__logo img {
+      width: 160px;
+    }
+  }
+}
