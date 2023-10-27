@@ -12,6 +12,7 @@ export type MenuContextType = React.Context<IMenuContext>;
 
 export interface IScrollContext {
   scrollableNodeRef: React.RefObject<HTMLDivType>;
+  scrollBack: (behaviour: ScrollBehavior) => void;
 }
 
 export type ScrollContextType = React.Context<IScrollContext>;

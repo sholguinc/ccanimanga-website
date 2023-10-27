@@ -5,19 +5,11 @@ import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import { ScrollContext } from '@/context';
 
 export const AngleUp = () => {
-  const { scrollableNodeRef } = useContext(ScrollContext);
-
-  const scrollBack = (): void => {
-    scrollableNodeRef?.current?.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth',
-    });
-  };
+  const { scrollBack } = useContext(ScrollContext);
 
   return (
     <div className="angle-up">
-      <a onClick={scrollBack}>
+      <a onClick={() => scrollBack('smooth')}>
         <div className="angle-up__container">
           <FontAwesomeIcon icon={faAngleUp} className="angle-up__icon" />
         </div>

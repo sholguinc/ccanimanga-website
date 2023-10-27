@@ -1,8 +1,18 @@
+import { useInView } from 'react-intersection-observer';
+
 import { Button, Text } from '@/components/atoms';
 
 import { IInfoCard } from '@/models';
 
 export const InfoCard = ({ title, text, image, to }: IInfoCard) => {
+  const options = {
+    threshold: 0.5,
+  };
+
+  const { ref: circleRef, inView } = useInView(options);
+
+  const showImage = inView ? 'visible' : '';
+
   return (
     <div className="info-card__wrapper">
       <div className="info-card">
@@ -22,10 +32,14 @@ export const InfoCard = ({ title, text, image, to }: IInfoCard) => {
           <Button to={to} size="xx-large" className="info-card__button" />
         </div>
         <div className="info-card__figure">
-          <div className="info-card__circle-container">
+          <div className="info-card__circle-container" ref={circleRef}>
             <div className="info-card__circle" />
           </div>
-          <img src={image} alt={title} className="info-card__image" />
+          <img
+            src={image}
+            alt={title}
+            className={`info-card__image ${showImage}`}
+          />
         </div>
       </div>
     </div>

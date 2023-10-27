@@ -85,6 +85,11 @@ $y-padding: $distance-x-padding;
 
     margin-bottom: 20px;
   }
+
+  // animation
+  &__image.visible {
+    display: none;
+  }
 }
 
 @media (max-width: $xl2) {
