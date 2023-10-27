@@ -38,6 +38,19 @@ $y-padding: $distance-x-padding;
   &__image {
     @include img_position($circle-size)
   }
+
+  // animation
+  $duration: .7s;
+
+  &__image {
+    $translate-distance: calc(100% + $distance-x-padding);
+    transform: translate($translate-distance, -50%);
+  }
+
+  &__image.visible {
+    transform: translate(0, -50%);
+    transition: transform $duration ease-in-out;
+  }
 }
 
 .info-card__wrapper {
@@ -84,11 +97,6 @@ $y-padding: $distance-x-padding;
     text-align: justify;
 
     margin-bottom: 20px;
-  }
-
-  // animation
-  &__image.visible {
-    display: none;
   }
 }
 

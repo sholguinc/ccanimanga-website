@@ -6,7 +6,9 @@ import { IInfoCard } from '@/models';
 
 export const InfoCard = ({ title, text, image, to }: IInfoCard) => {
   const options = {
-    threshold: 0.5,
+    initialInView: false,
+    threshold: 0.6,
+    triggerOnce: true,
   };
 
   const { ref: circleRef, inView } = useInView(options);
