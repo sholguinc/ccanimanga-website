@@ -41,8 +41,8 @@ $y-padding: $distance-x-padding;
 }
 
 // animation
-$duration: 1s;
-$translate-distance: 800px;
+$duration: 1.2s;
+$translate-distance: 100vw;
 
 @mixin set-animation-left() {
   @keyframes move-in-left {
