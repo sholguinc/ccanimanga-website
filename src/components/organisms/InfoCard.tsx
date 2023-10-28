@@ -4,7 +4,14 @@ import { Button, Text } from '@/components/atoms';
 
 import { IInfoCard } from '@/models';
 
-export const InfoCard = ({ title, text, image, to, className }: IInfoCard) => {
+export const InfoCard = ({
+  title,
+  text,
+  image,
+  to,
+  reverse = false,
+  className,
+}: IInfoCard) => {
   const options = {
     initialInView: false,
     threshold: 0.6,
@@ -12,12 +19,13 @@ export const InfoCard = ({ title, text, image, to, className }: IInfoCard) => {
   };
 
   const { ref: circleRef, inView } = useInView(options);
-
   const showImage = inView ? 'visible' : '';
+
+  const reverseCard = reverse ? 'reverse' : '';
 
   return (
     <div className={`info-card__wrapper ${className}`}>
-      <div className="info-card">
+      <div className={`info-card ${reverseCard}`}>
         <div className="info-card__content">
           <Text
             size="custom"

@@ -85,6 +85,7 @@ export interface IInfoCard extends IClassName {
   text: string;
   image: string;
   to?: string;
+  reverse?: boolean;
 }
 
 export interface IBanner {

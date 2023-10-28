@@ -32,8 +32,8 @@ export const Activities = () => {
         const parity = module == 0 ? 'odd' : 'even';
 
         return (
-          <div className="activity__container">
-            <Activity activity={activity} key={index} />
+          <div className="activity__container" key={index}>
+            <Activity activity={activity} />
             <Stroke className={`stroke ${parity}`} />
           </div>
         );

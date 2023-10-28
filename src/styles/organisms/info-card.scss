@@ -38,18 +38,57 @@ $y-padding: $distance-x-padding;
   &__image {
     @include img_position($circle-size)
   }
+}
 
-  // animation
-  $duration: .7s;
+// animation
+$duration: 1s;
+$translate-distance: 800px;
 
-  &__image {
-    $translate-distance: calc(100% + $distance-x-padding);
-    transform: translate($translate-distance, -50%);
+@mixin set-animation-left() {
+  @keyframes move-in-left {
+    0% {
+      transform: translate(-1 * $translate-distance, -50%);
+    }
+    80% {
+      transform: translate(0.05 * $translate-distance, -50%);
+    }
+    100% {
+      transform: translate(0, -50%);
+    }
   }
 
-  &__image.visible {
-    transform: translate(0, -50%);
-    transition: transform $duration ease-in-out;
+  .info-card__image {
+    visibility: hidden;
+  }
+
+  .info-card__image.visible {
+    visibility: visible;
+    animation: move-in-left $duration ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+@mixin set-animation-right() {
+  @keyframes move-in-right {
+    0% {
+      transform: translate($translate-distance, -50%);
+    }
+    80% {
+      transform: translate(-0.05 * $translate-distance, -50%);
+    }
+    100% {
+      transform: translate(0, -50%);
+    }
+  }
+
+  .info-card__image {
+    visibility: hidden;
+  }
+
+  .info-card__image.visible {
+    visibility: visible;
+    animation: move-in-right $duration ease-in-out;
+    animation-fill-mode: forwards;
   }
 }
 
@@ -81,10 +120,18 @@ $y-padding: $distance-x-padding;
 
   &__button {
     align-self: center;
+    margin-top: 12px;
   }
 
   // circle-figure
   @include set-circle-figure(700px);
+  @include set-animation-left;
+
+  // reverse
+  &.reverse {
+    flex-direction: row-reverse;
+    @include set-animation-right;
+  }
 
   // text
   &__title {
@@ -96,7 +143,6 @@ $y-padding: $distance-x-padding;
     line-height: 1.8rem;
     text-align: justify;
 
-    margin-bottom: 20px;
   }
 }
 
@@ -131,6 +177,10 @@ $y-padding: $distance-x-padding;
   .info-card {
     align-items: center;
     flex-direction: column;
+
+    &.reverse {
+      flex-direction: column;
+    }
 
     @include set-circle-figure(500px);
 

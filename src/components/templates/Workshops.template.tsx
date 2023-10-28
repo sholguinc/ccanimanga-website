@@ -9,14 +9,21 @@ export const WorkshopsTemplate = ({ workshops }: IWorkshopsTemplate) => {
   return (
     <>
       <Banner title="Talleres" img={WorkshopsBanner} />
-      {workshops.map((workshop) => (
-        <InfoCard
-          title={workshop.name}
-          text={workshop.description}
-          image={workshop.figure}
-          to={workshop.path}
-        />
-      ))}
+      {workshops.map((workshop, index) => {
+        const module = (index + 1) % 2;
+        const reverse = module == 0;
+
+        return (
+          <InfoCard
+            key={index}
+            title={workshop.name}
+            text={workshop.description}
+            image={workshop.figure}
+            to={workshop.path}
+            reverse={reverse}
+          />
+        );
+      })}
       <InfoCard
         title="Talleres Experimentales"
         text="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
