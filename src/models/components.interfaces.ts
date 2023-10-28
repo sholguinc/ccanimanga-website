@@ -80,11 +80,17 @@ export interface ILogos {
 }
 
 // Organisms
-export interface IInfoCard {
+export interface IInfoCard extends IClassName {
   title: string;
   text: string;
   image: string;
-  to: string;
+  to?: string;
+}
+
+export interface IBanner {
+  title: string;
+  img?: string;
+  brightness?: number;
 }
 
 // Templates

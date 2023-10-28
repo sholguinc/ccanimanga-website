@@ -4,7 +4,7 @@ import { Button, Text } from '@/components/atoms';
 
 import { IInfoCard } from '@/models';
 
-export const InfoCard = ({ title, text, image, to }: IInfoCard) => {
+export const InfoCard = ({ title, text, image, to, className }: IInfoCard) => {
   const options = {
     initialInView: false,
     threshold: 0.6,
@@ -16,7 +16,7 @@ export const InfoCard = ({ title, text, image, to }: IInfoCard) => {
   const showImage = inView ? 'visible' : '';
 
   return (
-    <div className="info-card__wrapper">
+    <div className={`info-card__wrapper ${className}`}>
       <div className="info-card">
         <div className="info-card__content">
           <Text
@@ -31,7 +31,9 @@ export const InfoCard = ({ title, text, image, to }: IInfoCard) => {
           <Text size="custom" className="info-card__description">
             {text}
           </Text>
-          <Button to={to} size="xx-large" className="info-card__button" />
+          {to && (
+            <Button to={to} size="xx-large" className="info-card__button" />
+          )}
         </div>
         <div className="info-card__figure">
           <div className="info-card__circle-container" ref={circleRef}>

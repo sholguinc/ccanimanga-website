@@ -2,7 +2,7 @@ import { Logos } from '@/components/molecules';
 import { Slider, InfoCard, Activities } from '@/components/organisms';
 
 import { logosUNI } from '@/data';
-import Anigirl from '@/assets/images/artist.png';
+import Anigirl from '@/assets/figures/artist.png';
 
 export const HomeTemplate = () => {
   return (
