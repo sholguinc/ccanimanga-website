@@ -23,3 +23,10 @@ export interface INavigateContext {
 }
 
 export type NavigateContextType = React.Context<INavigateContext>;
+
+export interface ILightBoxContext {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export type LightBoxContextType = React.Context<ILightBoxContext>;

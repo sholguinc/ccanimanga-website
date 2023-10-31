@@ -7,3 +7,4 @@ export * from './PageBackground.tsx';
 export * from './InfoCard.tsx';
 export * from './Banner.tsx';
 export * from './Gallery.tsx';
+export * from './LightBox.tsx';

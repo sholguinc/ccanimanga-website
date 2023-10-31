@@ -1,34 +1,29 @@
 import { Text, CardImage } from '@/components/atoms';
+import { LightBox } from '@/components/organisms';
 
 import { IGallery } from '@/models';
+import { LightBoxContextProvider } from '@/context';
 
-import Image from '@/assets/banners/about-us.jpg';
-
-export const Gallery = ({ title = 'Galería' }: IGallery) => {
+export const Gallery = ({ title = 'Galería', images }: IGallery) => {
   return (
-    <section className="gallery">
-      <Text
-        size="custom"
-        color="white"
-        family="quicksand"
-        weight="semi-bold"
-        className="gallery__title"
-      >
-        {title}
-      </Text>
-      <div className="gallery__images">
-        <CardImage src={Image} alt="image" />
-        <CardImage src={Image} alt="image" />
-        <CardImage src={Image} alt="image" />
-        <CardImage src={Image} alt="image" />
-        <CardImage src={Image} alt="image" />
-        <CardImage src={Image} alt="image" />
-        <CardImage src={Image} alt="image" />
-        <CardImage src={Image} alt="image" />
-        <CardImage src={Image} alt="image" />
-        <CardImage src={Image} alt="image" />
-        <CardImage src={Image} alt="image" />
-      </div>
-    </section>
+    <LightBoxContextProvider>
+      <section className="gallery">
+        <Text
+          size="custom"
+          color="white"
+          family="quicksand"
+          weight="semi-bold"
+          className="gallery__title"
+        >
+          {title}
+        </Text>
+        <div className="gallery__images">
+          {images.map((image, index) => (
+            <CardImage key={index} src={image.src} alt={image.alt} />
+          ))}
+        </div>
+        <LightBox slides={images} />
+      </section>
+    </LightBoxContextProvider>
   );
 };

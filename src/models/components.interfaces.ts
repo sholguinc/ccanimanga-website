@@ -1,7 +1,13 @@
 import React from 'react';
 import { LinkProps } from 'react-router-dom';
 
-import { IActivityData, SocialMediaSite, IWorkshop, ILogo } from '@/models';
+import {
+  IActivityData,
+  SocialMediaSite,
+  IWorkshop,
+  ILogo,
+  IGalleryImage,
+} from '@/models';
 
 // Base
 type ChildrenType = string | React.ReactNode;
@@ -64,6 +70,11 @@ export interface IBackground extends IChildren {
   brightness?: number;
 }
 
+export interface ICardImage {
+  src: string;
+  alt: string;
+}
+
 // Molecules
 export interface ISocialMediaList {
   direction?: 'row' | 'column';
@@ -106,6 +117,11 @@ export interface IBanner {
 
 export interface IGallery {
   title?: string;
+  images: IGalleryImage[];
+}
+
+export interface ILightBox {
+  slides: IGalleryImage[];
 }
 
 // Templates

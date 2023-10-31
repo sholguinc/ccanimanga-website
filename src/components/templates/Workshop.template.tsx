@@ -12,7 +12,7 @@ export const WorkshopTemplate = ({ workshop }: IWorkshopTemplate) => {
           text={workshop.description}
           img={workshop.descriptionImage}
         />
-        <Gallery />
+        <Gallery images={workshop.gallery} />
       </div>
     </PageBackground>
   );
