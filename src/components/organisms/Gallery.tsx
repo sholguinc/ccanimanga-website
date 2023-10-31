@@ -11,7 +11,7 @@ export const Gallery = ({ title = 'Galería' }: IGallery) => {
         size="custom"
         color="white"
         family="quicksand"
-        weight="bold"
+        weight="semi-bold"
         className="gallery__title"
       >
         {title}
