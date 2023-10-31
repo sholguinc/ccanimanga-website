@@ -10,11 +10,11 @@ export const InfoCard = ({
   image,
   to,
   reverse = false,
-  className,
+  className = '',
 }: IInfoCard) => {
   const options = {
     initialInView: false,
-    threshold: 0.6,
+    threshold: 0.4,
     triggerOnce: true,
   };
 

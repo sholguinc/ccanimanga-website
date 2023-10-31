@@ -1,0 +1,19 @@
+.gallery {
+  margin: 0 auto;
+  padding: 140px $distance-x-padding 120px;
+
+  max-width: 90%;
+
+  &__title {
+    font-size: 3rem;
+    padding: 0 40px 44px;
+  }
+
+  &__images {
+    display: grid;
+    justify-content: stretch;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+  }
+}

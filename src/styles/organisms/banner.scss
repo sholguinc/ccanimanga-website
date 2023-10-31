@@ -8,25 +8,21 @@
   height: $banner-height;
   position: relative;
 
-  &__image {
-    @include set-full;
-    object-fit: cover;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  &__cover {
-    @include set-full;
+  &__image {
     top: 0;
-    z-index: 10;
     position: absolute;
+    object-fit: cover;
+
+    @include set-full;
   }
 
   &__title {
+    z-index: 10;
     font-size: 4rem;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }
 

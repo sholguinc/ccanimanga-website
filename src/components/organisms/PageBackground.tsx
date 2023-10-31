@@ -14,7 +14,7 @@ export const PageBackground = ({
       >
         <img src={src} alt={alt} className="page-background__image" />
       </figure>
-      {children}
+      <div className="page-content">{children}</div>
     </>
   );
 };

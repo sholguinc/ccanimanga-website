@@ -12,7 +12,7 @@ export const Activities = () => {
   return (
     <div className="activities">
       <div className="header__container">
-        <Stroke className="stroke stroke-header-top" />
+        <Stroke className="activities__stroke stroke-header-top" />
         <div className="activities__header">
           <Text
             size="custom"
@@ -24,9 +24,8 @@ export const Activities = () => {
             Lo que hacemos:
           </Text>
         </div>
-        <Stroke className="stroke stroke-header-bottom" />
+        <Stroke className="activities__stroke stroke-header-bottom" />
       </div>
-
       {activities.map((activity, index) => {
         const module = index % 2;
         const parity = module == 0 ? 'odd' : 'even';
@@ -34,7 +33,7 @@ export const Activities = () => {
         return (
           <div className="activity__container" key={index}>
             <Activity activity={activity} />
-            <Stroke className={`stroke ${parity}`} />
+            <Stroke className={`activities__stroke ${parity}`} />
           </div>
         );
       })}

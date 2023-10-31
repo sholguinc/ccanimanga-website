@@ -79,6 +79,16 @@ export interface ILogos {
   logos: ILogo[];
 }
 
+export interface IWorkshopBanner {
+  title: string;
+  img: string;
+}
+
+export interface IWorkshopDescription {
+  text: string;
+  img: string;
+}
+
 // Organisms
 export interface IInfoCard extends IClassName {
   title: string;
@@ -92,6 +102,10 @@ export interface IBanner {
   title: string;
   img?: string;
   brightness?: number;
+}
+
+export interface IGallery {
+  title?: string;
 }
 
 // Templates
