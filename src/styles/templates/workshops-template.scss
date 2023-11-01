@@ -1,3 +1,9 @@
 .other-workshops {
   margin-bottom: 100px;
 }
+
+@media (max-width: $md) {
+  .other-workshops {
+    margin-bottom: 60px;
+  }
+}

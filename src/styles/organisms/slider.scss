@@ -104,6 +104,8 @@
 @media (max-width: $sm) {
   .slider {
     @include set-angle-size(40px);
+
+    height: $mobile-banner-height;
   }
 }
 

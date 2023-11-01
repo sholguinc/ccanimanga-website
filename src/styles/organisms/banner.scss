@@ -32,8 +32,12 @@
   }
 }
 
-@media (max-width: $sm) {
-  .banner__title {
-    font-size: 2.8rem;
+@media (max-width: $md) {
+  .banner {
+    height: $mobile-banner-height;
+
+    &__title {
+      font-size: 2.8rem;
+    }
   }
 }

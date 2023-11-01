@@ -16,8 +16,16 @@
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
-    gap: 100px;
+    gap: 96px;
 
     overflow: hidden;
+  }
+}
+
+@media (max-width: $md) {
+  .layout-template {
+    &__body {
+      gap: 60px;
+    }
   }
 }

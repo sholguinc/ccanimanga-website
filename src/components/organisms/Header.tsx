@@ -8,7 +8,9 @@ export const Header = () => {
   return (
     <header className="header">
       <figure className="header__logo">
-        <img src={CCAMLogo} alt="ccam-logo" />
+        <DelayLink to="/">
+          <img src={CCAMLogo} alt="ccam-logo" />
+        </DelayLink>
       </figure>
       <ul className="header__routes">
         {headerRoutes.map((route, index) => (

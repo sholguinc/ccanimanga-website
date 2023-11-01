@@ -47,6 +47,10 @@
   }
 
   @include set-width-logo(148px);
+
+  .logos__container {
+    margin-bottom: 60px;
+  }
 }
 
 @media (max-width: $sm) {
