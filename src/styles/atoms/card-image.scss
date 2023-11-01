@@ -1,5 +1,5 @@
 @mixin card-animation {
-  .card-image__img {
+  .card-image__wrapper {
     transform: scale(1.2);
   }
 
@@ -36,12 +36,15 @@
 
   $animation-duration: .4s;
 
-  &__img {
+  &__wrapper {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 
     transition: transform $animation-duration ease;
+  }
+
+  &__img {
+    object-fit: cover;
   }
 
   &__plus {
@@ -55,7 +58,9 @@
 
     transition: opacity $animation-duration ease;
 
-    $thickness: 2px;
+    visibility: hidden;
+
+    $thickness: 3px;
     $length: 30%;
     $plus-color: $color-white;
 
@@ -82,7 +87,15 @@
     }
   }
 
-  &:hover {
-    @include card-animation;
+  // visibility
+  &.loaded {
+    .card-image__plus {
+      visibility: visible;
+    }
+
+    &:hover {
+      @include card-animation;
+    }
   }
 }
+
