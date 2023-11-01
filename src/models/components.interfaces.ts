@@ -73,6 +73,7 @@ export interface IBackground extends IChildren {
 export interface ICardImage {
   src: string;
   alt: string;
+  index: number;
 }
 
 // Molecules

@@ -1,5 +1,8 @@
 import { useContext } from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+
 import Lightbox from 'yet-another-react-lightbox';
 import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails';
 import Fullscreen from 'yet-another-react-lightbox/plugins/fullscreen';
@@ -12,11 +15,12 @@ import { ILightBox } from '@/models';
 import { LightBoxContext } from '@/context';
 
 export const LightBox = ({ slides }: ILightBox) => {
-  const { open, setOpen } = useContext(LightBoxContext);
+  const { index, open, setOpen } = useContext(LightBoxContext);
 
   return (
     <Lightbox
       open={open}
+      index={index}
       close={() => setOpen(false)}
       slides={slides}
       plugins={[Fullscreen, Thumbnails, Zoom]}
@@ -25,9 +29,21 @@ export const LightBox = ({ slides }: ILightBox) => {
         maxZoomPixelRatio: 2,
       }}
       animation={{
-        fade: 560,
+        fade: 520,
+        swipe: 360,
+      }}
+      carousel={{
+        padding: '20px',
       }}
       className="lightbox"
+      render={{
+        iconPrev: () => (
+          <FontAwesomeIcon icon={faAngleLeft} className="lightbox__angle" />
+        ),
+        iconNext: () => (
+          <FontAwesomeIcon icon={faAngleRight} className="lightbox__angle" />
+        ),
+      }}
     />
   );
 };

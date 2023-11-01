@@ -19,7 +19,12 @@ export const Gallery = ({ title = 'Galería', images }: IGallery) => {
         </Text>
         <div className="gallery__images">
           {images.map((image, index) => (
-            <CardImage key={index} src={image.src} alt={image.alt} />
+            <CardImage
+              key={index}
+              src={image.src}
+              alt={image.alt}
+              index={index}
+            />
           ))}
         </div>
         <LightBox slides={images} />

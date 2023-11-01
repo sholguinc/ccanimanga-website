@@ -27,6 +27,9 @@ export type NavigateContextType = React.Context<INavigateContext>;
 export interface ILightBoxContext {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  index: number;
+  setIndex: React.Dispatch<React.SetStateAction<number>>;
+  setOpenIndex: (index: number) => void;
 }
 
 export type LightBoxContextType = React.Context<ILightBoxContext>;
