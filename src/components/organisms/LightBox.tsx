@@ -29,7 +29,7 @@ export const LightBox = ({ slides }: ILightBox) => {
         maxZoomPixelRatio: 2,
       }}
       animation={{
-        fade: 520,
+        fade: 600,
         swipe: 360,
       }}
       carousel={{
