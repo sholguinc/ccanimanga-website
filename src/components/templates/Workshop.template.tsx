@@ -1,4 +1,4 @@
-import { WorkshopBanner, WorkshopDescription } from '@/components/molecules';
+import { WorkshopBanner, Description } from '@/components/molecules';
 import { PageBackground, Gallery } from '@/components/organisms';
 
 import { IWorkshopTemplate } from '@/models';
@@ -8,7 +8,7 @@ export const WorkshopTemplate = ({ workshop }: IWorkshopTemplate) => {
     <PageBackground src={workshop.backgroundImage} alt={workshop.name}>
       <div className="workshop-template">
         <WorkshopBanner title={workshop.title} img={workshop.backgroundImage} />
-        <WorkshopDescription
+        <Description
           text={workshop.description}
           img={workshop.descriptionImage}
         />

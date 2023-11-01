@@ -1,6 +1,6 @@
 $background-color: $color-fake-white;
 
-.workshop-description {
+.description {
   position: relative;
   width: 100%;
   height: fit-content;
@@ -39,7 +39,7 @@ $background-color: $color-fake-white;
 }
 
 @media (max-width: $md) {
-  .workshop-description {
+  .description {
     padding-top: 50px;
     padding-bottom: 30px;
     flex-direction: column;

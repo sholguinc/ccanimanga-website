@@ -96,7 +96,7 @@ export interface IWorkshopBanner {
   img: string;
 }
 
-export interface IWorkshopDescription {
+export interface IDescription {
   text: string;
   img: string;
 }
