@@ -54,8 +54,9 @@ $y-padding: $distance-x-padding;
 }
 
 // animation
-$duration: 1s;
+$duration: 1.2s;
 $translate-distance: 105vw;
+$timing-function: ease-out;
 
 @mixin set-animation-left() {
   @keyframes move-in-left {
@@ -76,7 +77,7 @@ $translate-distance: 105vw;
 
   .info-card__image-movement.visible {
     visibility: visible;
-    animation: move-in-left $duration ease-in-out;
+    animation: move-in-left $duration $timing-function;
     animation-fill-mode: forwards;
   }
 }
@@ -100,7 +101,7 @@ $translate-distance: 105vw;
 
   .info-card__image-movement.visible {
     visibility: visible;
-    animation: move-in-right $duration ease-in-out;
+    animation: move-in-right $duration $timing-function;
     animation-fill-mode: forwards;
   }
 }
