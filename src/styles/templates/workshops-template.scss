@@ -1,9 +1,9 @@
 .other-workshops {
-  margin-bottom: 100px;
+  margin-bottom: $main-content-gap;
 }
 
 @media (max-width: $md) {
   .other-workshops {
-    margin-bottom: 60px;
+    margin-bottom: $mobile-content-gap;
   }
 }
