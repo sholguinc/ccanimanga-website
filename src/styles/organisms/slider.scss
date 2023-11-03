@@ -26,7 +26,7 @@
 
 .slider {
   width: 100%;
-  height: max(72vh, 560px);
+  height: $banner-height;
   position: relative;
 
   &__swiper {
@@ -104,6 +104,8 @@
 @media (max-width: $sm) {
   .slider {
     @include set-angle-size(40px);
+
+    height: $mobile-banner-height;
   }
 }
 

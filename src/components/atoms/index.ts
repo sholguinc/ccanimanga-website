@@ -5,3 +5,4 @@ export * from './SocialMedia.tsx';
 export * from './Button.tsx';
 export * from './DelayLink.tsx';
 export * from './Background.tsx';
+export * from './CardImage.tsx';

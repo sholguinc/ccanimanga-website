@@ -7,13 +7,13 @@ export const activities: FixedLengthArray<IActivityData, 4> = [
     name: 'Talleres',
     description: 'de manga, origami, shogi, etc.',
     path: '/talleres',
-    background: baseUrl + '/talleres.jpg',
+    background: baseUrl + '/workshops.jpg',
   },
   {
     name: 'Proyecciones',
     description: 'de series y películas anime',
     path: '/proyecciones',
-    background: baseUrl + '/proyecciones.jpg',
+    background: baseUrl + '/screenings.jpg',
   },
   {
     name: 'UNI Japan Week',
@@ -25,6 +25,6 @@ export const activities: FixedLengthArray<IActivityData, 4> = [
     name: 'Otras Actividades',
     description: 'dentro y fuera de la UNI',
     path: '/otras-actividades',
-    background: baseUrl + '/otras-actividades.jpg',
+    background: baseUrl + '/other-activities.jpg',
   },
 ];

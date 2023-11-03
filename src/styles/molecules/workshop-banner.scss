@@ -1,0 +1,52 @@
+.workshop-banner {
+  position: relative;
+  width: 100%;
+  height: $banner-height;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  &__title {
+    padding-left: $distance-x-padding;
+    font-size: 4rem;
+
+    z-index: 5;
+  }
+
+  &__background {
+    display: none;
+
+    z-index: 0;
+  }
+}
+
+@media (max-width: $md) {
+  .workshop-banner {
+    height: $mobile-banner-height;
+    justify-content: center;
+
+    &__title {
+      padding-left: 0;
+      font-size: 2.8rem;
+    }
+
+    &__background {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(.4);
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .workshop-banner__title {
+    font-size: 2rem;
+  }
+}

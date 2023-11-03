@@ -1,0 +1,101 @@
+@mixin card-animation {
+  .card-image__wrapper {
+    transform: scale(1.2);
+  }
+
+  .card-image__plus {
+    opacity: .85;
+  }
+
+  .card-image__plus {
+    &__horizontal {
+      transform: translate(-50%, -50%) scaleX(1);
+    }
+
+    &__vertical {
+      transform: translate(-50%, -50%) scaleY(1);
+    }
+  }
+}
+
+@mixin center-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.card-image {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  cursor: pointer;
+
+  $animation-duration: .4s;
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+
+    transition: transform $animation-duration ease;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__plus {
+    width: 88%;
+    height: 88%;
+
+    @include center-div;
+
+    background-color: $ccam-red;
+    opacity: 0;
+
+    transition: opacity $animation-duration ease;
+
+    visibility: hidden;
+
+    $thickness: 3px;
+    $length: 30%;
+    $plus-color: $color-white;
+
+    &__horizontal {
+      width: $length;
+      height: $thickness;
+      background-color: $plus-color;
+
+      @include center-div;
+
+      transform: translate(-50%, -50%) scaleX(.4);
+      transition: transform $animation-duration ease;
+    }
+
+    &__vertical {
+      width: $thickness;
+      height: $length;
+      background-color: $plus-color;
+
+      @include center-div;
+
+      transform: translate(-50%, -50%) scaleY(.4);
+      transition: transform $animation-duration ease;
+    }
+  }
+
+  // visibility
+  &.loaded {
+    .card-image__plus {
+      visibility: visible;
+    }
+
+    &:hover {
+      @include card-animation;
+    }
+  }
+}
+

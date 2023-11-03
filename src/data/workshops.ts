@@ -1,5 +1,7 @@
 import { StringKeyObject, IWorkshop } from '@/models';
 
+import { mangaGallery } from '@/data';
+
 const baseUrl = '/images/workshops';
 
 export const workshops: StringKeyObject<IWorkshop> = {
@@ -14,6 +16,8 @@ export const workshops: StringKeyObject<IWorkshop> = {
       'suscipit vero voluptatem!',
     descriptionImage: baseUrl + '/description/manga.jpg',
     figure: baseUrl + '/figure/manga.png',
+    figureTransform: 'scale(.8)',
+    gallery: mangaGallery,
   },
   origami: {
     name: 'Origami',
@@ -26,6 +30,8 @@ export const workshops: StringKeyObject<IWorkshop> = {
       'suscipit vero voluptatem!',
     descriptionImage: baseUrl + '/description/origami.jpeg',
     figure: baseUrl + '/figure/origami.png',
+    figureTransform: 'translate(-5%) scale(1.2)',
+    gallery: mangaGallery,
   },
   shogi: {
     name: 'Shogi',
@@ -38,6 +44,8 @@ export const workshops: StringKeyObject<IWorkshop> = {
       'suscipit vero voluptatem!',
     descriptionImage: baseUrl + '/description/shogi.jpg',
     figure: baseUrl + '/figure/shogi.png',
+    figureTransform: 'scale(1)',
+    gallery: mangaGallery,
   },
   papercraft: {
     name: 'Papercraft',
@@ -49,6 +57,8 @@ export const workshops: StringKeyObject<IWorkshop> = {
       'deseruntadfadf earum error placeat, reprehenderit? Beatae est non sapiente. Aut et in non quis repellendus, saepe',
     descriptionImage: baseUrl + '/description/papercraft.jpg',
     figure: baseUrl + '/figure/papercraft.png',
+    figureTransform: 'scale(1)',
+    gallery: mangaGallery,
   },
   'hama-beads': {
     name: 'Hama Beads',
@@ -61,6 +71,8 @@ export const workshops: StringKeyObject<IWorkshop> = {
       'suscipit vero voluptatem!',
     descriptionImage: baseUrl + '/description/papercraft.jpg',
     figure: baseUrl + '/figure/hama-beads.png',
+    figureTransform: 'translateY(-5%)',
+    gallery: mangaGallery,
   },
   japones: {
     name: 'Idioma Japonés',
@@ -73,5 +85,7 @@ export const workshops: StringKeyObject<IWorkshop> = {
       'suscipit vero voluptatem!',
     descriptionImage: baseUrl + '/description/papercraft.jpg',
     figure: baseUrl + '/figure/japones.png',
+    figureTransform: 'scale(.6)',
+    gallery: mangaGallery,
   },
 };
