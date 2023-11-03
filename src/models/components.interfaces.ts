@@ -106,6 +106,7 @@ export interface IInfoCard extends IClassName {
   title: string;
   text: string;
   image: string;
+  imageTransform?: string;
   to?: string;
   reverse?: boolean;
 }

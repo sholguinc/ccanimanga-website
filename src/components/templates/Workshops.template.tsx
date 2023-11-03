@@ -19,6 +19,7 @@ export const WorkshopsTemplate = ({ workshops }: IWorkshopsTemplate) => {
             title={workshop.name}
             text={workshop.description}
             image={workshop.figure}
+            imageTransform={workshop.figureTransform}
             to={workshop.path}
             reverse={reverse}
           />
@@ -31,6 +32,7 @@ export const WorkshopsTemplate = ({ workshops }: IWorkshopsTemplate) => {
         Beatae est non sapiente. Aut et in non quis repellendus, saepsuscipit
         vero voluptatem!"
         image={OtherWorkshops}
+        imageTransform="translateY(15%)"
         className="other-workshops"
       />
     </>

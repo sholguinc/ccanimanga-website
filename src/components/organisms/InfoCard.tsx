@@ -8,13 +8,14 @@ export const InfoCard = ({
   title,
   text,
   image,
+  imageTransform = '',
   to,
   reverse = false,
   className = '',
 }: IInfoCard) => {
   const options = {
     initialInView: false,
-    threshold: 0.4,
+    threshold: 0.5,
     triggerOnce: true,
   };
 
@@ -47,11 +48,16 @@ export const InfoCard = ({
           <div className="info-card__circle-container" ref={circleRef}>
             <div className="info-card__circle" />
           </div>
-          <img
-            src={image}
-            alt={title}
-            className={`info-card__image ${showImage}`}
-          />
+          <div className="info-card__image-container">
+            <div className={`info-card__image-movement ${showImage}`}>
+              <img
+                src={image}
+                alt={title}
+                className="info-card__image"
+                style={{ transform: imageTransform }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
