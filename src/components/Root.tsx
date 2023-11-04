@@ -1,7 +1,15 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import { LayoutTemplate } from '@/components/templates';
-import { Home, Error, Loading, Workshop, Workshops } from '@/components/pages';
+import {
+  Home,
+  Error,
+  Loading,
+  Workshop,
+  Workshops,
+  Screenings,
+  OtherActivities,
+} from '@/components/pages';
 
 const Root = () => {
   return (
@@ -18,8 +26,8 @@ const Root = () => {
             </Route>
 
             <Route path="/uni-japan-week" element={<Home />} />
-            <Route path="/proyecciones" element={<Home />} />
-            <Route path="/otras-actividades" element={<Home />} />
+            <Route path="/proyecciones" element={<Screenings />} />
+            <Route path="/otras-actividades" element={<OtherActivities />} />
           </Route>
 
           <Route path="/404" element={<Error />} />

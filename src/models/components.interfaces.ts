@@ -143,3 +143,10 @@ export interface IWorkshopTemplate {
 export interface IWorkshopsTemplate {
   workshops: IWorkshop[];
 }
+
+export interface IActivityTemplate {
+  name: string;
+  background: IBackground;
+  description: IDescription;
+  gallery: IGalleryImage[];
+}
