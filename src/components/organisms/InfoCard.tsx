@@ -15,7 +15,7 @@ export const InfoCard = ({
 }: IInfoCard) => {
   const options = {
     initialInView: false,
-    threshold: 0.5,
+    threshold: 0.6,
     triggerOnce: true,
   };
 

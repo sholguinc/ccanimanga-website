@@ -1,0 +1,9 @@
+.last-section {
+  margin-bottom: $main-content-gap;
+}
+
+@media (max-width: $md) {
+  .last-section {
+    margin-bottom: $mobile-content-gap;
+  }
+}

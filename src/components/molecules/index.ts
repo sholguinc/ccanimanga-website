@@ -5,3 +5,4 @@ export * from './Activity.tsx';
 export * from './Logos.tsx';
 export * from './Description.tsx';
 export * from './WorkshopBanner.tsx';
+export * from './AboutUsSection.tsx';
