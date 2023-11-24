@@ -5,6 +5,7 @@ import {
   Home,
   Error,
   Loading,
+  AboutUs,
   Workshop,
   Workshops,
   Screenings,
@@ -18,7 +19,7 @@ const Root = () => {
         <Route element={<Loading />}>
           <Route element={<LayoutTemplate />}>
             <Route index element={<Home />} />
-            <Route path="/nosotros" element={<Home />} />
+            <Route path="/nosotros" element={<AboutUs />} />
 
             <Route path="/talleres">
               <Route index element={<Workshops />} />

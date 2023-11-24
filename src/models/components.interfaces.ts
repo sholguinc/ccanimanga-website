@@ -101,6 +101,13 @@ export interface IDescription {
   img: string;
 }
 
+export interface IAboutUsSection extends IClassName {
+  title: string;
+  text: string;
+  image?: string;
+  reverse?: boolean;
+}
+
 // Organisms
 export interface IInfoCard extends IClassName {
   title: string;

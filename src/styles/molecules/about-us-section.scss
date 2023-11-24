@@ -1,0 +1,154 @@
+$x-padding: $distance-x-padding;
+$y-padding: $distance-x-padding;
+
+@mixin img_position($circle-size) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: $circle-size;
+}
+
+@mixin set-circle-figure($circle-size) {
+  &__figure {
+    width: $circle-size;
+    position: relative;
+  }
+
+  &__circle-container {
+    width: $circle-size;
+    height: 100%;
+    position: relative;
+
+    // crop
+    overflow: hidden;
+  }
+
+  &__circle {
+    height: $circle-size;
+    border-radius: 100%;
+    background-color: $ccam-red;
+
+    @include img_position($circle-size);
+
+    overflow: hidden;
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.about-us-section__wrapper {
+  width: 100%;
+  background-color: $color-white;
+  z-index: 100;
+}
+
+.about-us-section {
+  margin: 0 auto;
+  max-width: 90%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 52px;
+
+  &__content {
+    flex-basis: 52%;
+
+    padding: calc($y-padding - 25px) 0 $y-padding;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__button {
+    align-self: center;
+    margin-top: 12px;
+  }
+
+  // circle-figure
+  @include set-circle-figure(700px);
+
+  // reverse
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+
+  // text
+  &__title {
+    font-size: 2.6rem;
+    width: fit-content;
+    padding-bottom: 10px;
+    padding-right: 80px;
+    border-bottom: 2px solid $ccam-red;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: justify;
+  }
+}
+
+@media (max-width: $xl2) {
+  .about-us-section {
+    gap: 80px;
+    @include set-circle-figure(600px);
+  }
+}
+
+@media (max-width: $xl) {
+  .about-us-section {
+    &__title {
+      font-size: 2.4rem;
+    }
+
+    @include set-circle-figure(520px);
+  }
+}
+
+@media (max-width: $lg) {
+  .about-us-section {
+    @include set-circle-figure(44vw);
+
+    &__description {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .about-us-section {
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    &.reverse {
+      flex-direction: column;
+    }
+
+    @include set-circle-figure(500px);
+
+    &__circle-container {
+      height: 500px;
+    }
+
+    &__content {
+      padding: $y-padding 0 40px 0;
+    }
+
+    &__figure {
+      margin-bottom: 40px;
+    }
+
+    &__description {
+      margin-bottom: 4px;
+    }
+  }
+}
