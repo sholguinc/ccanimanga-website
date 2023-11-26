@@ -1,35 +1,62 @@
-.logos-ujw__container {
+@mixin set-width-logo($logo-width) {
+  .logos {
+    grid-template-columns: repeat(4, $logo-width);
+  }
+
+  .logo {
+    width: $logo-width;
+  }
+}
+
+.logos__container {
   background-color: $color-white;
-  margin: 16px 0 72px;
+  margin: 16px 0 $main-content-gap;
   padding: 24px 0;
 }
 
-.logos-ujw {
-  padding: 60px $distance-x-padding;
+.logos {
+  padding: 24px 0;
 
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 60px;
+  align-items: center;
+  place-items: center;
+  gap: 10%;
 
   border-style: solid;
   border-color: $ccam-red;
   border-width: 2px 0;
-
-  .logo-ujw {
-    width: 180px;
-  }
 }
 
+@include set-width-logo(200px);
+
 @media (max-width: $xl) {
-  .logo-ujw {
-    width: 160px;
+  @include set-width-logo(160px);
+}
+
+@media (max-width: $lg) {
+  .logos {
+    gap: 5%;
   }
 }
 
 @media (max-width: 900px) {
-  .logo-ujw {
-    width: 148px;
+  $logo-width: 148px;
+
+  .logos {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, $logo-width);
+    gap: 0 15%;
+  }
+
+  .logo {
+    width: $logo-width;
+  }
+}
+
+@media (max-width: $md) {
+  .logos__container {
+    margin-bottom: $mobile-content-gap;
   }
 }

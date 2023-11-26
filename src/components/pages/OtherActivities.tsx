@@ -1,7 +1,7 @@
 import { ActivityTemplate } from '@/components/templates';
 
 import { IActivityTemplate, IBackground, IDescription } from '@/models';
-import { mangaGallery } from '@/data';
+import { screeningsGallery } from '@/data';
 
 import OtherActivitiesBackground from '@/assets/images/other-activities.jpg';
 
@@ -20,7 +20,7 @@ export const OtherActivities = () => {
         'Commodi cumque incidunt placeat. Commodi consectetur quo sequi ut?',
       img: OtherActivitiesBackground,
     } as IDescription,
-    gallery: mangaGallery,
+    gallery: screeningsGallery,
   };
 
   return <ActivityTemplate {...props} />;
