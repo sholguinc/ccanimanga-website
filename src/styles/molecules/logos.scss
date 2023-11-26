@@ -41,19 +41,7 @@
   }
 }
 
-@media (max-width: $md) {
-  .logos {
-    gap: 1%;
-  }
-
-  @include set-width-logo(148px);
-
-  .logos__container {
-    margin-bottom: $mobile-content-gap;
-  }
-}
-
-@media (max-width: $sm) {
+@media (max-width: 900px) {
   $logo-width: 148px;
 
   .logos {

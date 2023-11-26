@@ -60,6 +60,7 @@ export interface IWorkshop {
 export interface ILogo {
   name: string;
   img: string;
+  transform?: string;
 }
 
 export interface IGalleryImage {

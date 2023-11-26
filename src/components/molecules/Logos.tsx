@@ -5,7 +5,13 @@ export const Logos = ({ logos }: ILogos) => {
     <div className="logos__container">
       <div className="logos">
         {logos.map((logo, index) => (
-          <img src={logo.img} alt={logo.name} className="logo" key={index} />
+          <img
+            src={logo.img}
+            alt={logo.name}
+            className="logo"
+            key={index}
+            style={{ transform: logo.transform }}
+          />
         ))}
       </div>
     </div>
