@@ -5,7 +5,6 @@ import {
   IActivityData,
   SocialMediaSite,
   IWorkshop,
-  ILogo,
   IGalleryImage,
 } from '@/models';
 
@@ -85,10 +84,6 @@ export interface ISocialMediaList {
 
 export interface IActivity {
   activity: IActivityData;
-}
-
-export interface ILogos {
-  logos: ILogo[];
 }
 
 export interface IWorkshopBanner {

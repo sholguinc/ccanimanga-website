@@ -6,3 +6,4 @@ export * from './Logos.tsx';
 export * from './Description.tsx';
 export * from './WorkshopBanner.tsx';
 export * from './AboutUsSection.tsx';
+export * from './LogosUJW.tsx';

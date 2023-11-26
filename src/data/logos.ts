@@ -31,6 +31,7 @@ const otherLogos: ILogo[] = [
   {
     name: '150 años JP',
     img: baseUrl + '/150-aniversario-JPN.png',
+    transform: 'scale(1.6)',
   },
   {
     name: 'Berioska',
