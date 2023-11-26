@@ -8,3 +8,5 @@ export * from './InfoCard.tsx';
 export * from './Banner.tsx';
 export * from './Gallery.tsx';
 export * from './LightBox.tsx';
+export * from './UJWGrid.tsx';
+export * from './UJWGallery.tsx';

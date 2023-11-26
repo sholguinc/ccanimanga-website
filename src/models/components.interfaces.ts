@@ -6,6 +6,7 @@ import {
   SocialMediaSite,
   IWorkshop,
   IGalleryImage,
+  IUJWDay,
 } from '@/models';
 
 // Base
@@ -126,6 +127,10 @@ export interface IGallery {
 
 export interface ILightBox {
   slides: IGalleryImage[];
+}
+
+export interface IUJWGrid {
+  days: IUJWDay[];
 }
 
 // Templates

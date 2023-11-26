@@ -1,10 +1,8 @@
 import { LogosUJW } from '@/components/molecules';
-import { Banner, Gallery, InfoCard } from '@/components/organisms';
+import { Banner, InfoCard, UJWGallery } from '@/components/organisms';
 
 import UJWBanner from '@/assets/images/uni-japan-week.jpg';
 import UJWImage from '@/assets/figures/yukata-girl.png';
-
-import { mangaGallery } from '@/data';
 
 export const UNIJapanWeekTemplate = () => {
   return (
@@ -30,9 +28,7 @@ export const UNIJapanWeekTemplate = () => {
         reverse={true}
         className="ujw__description"
       />
-      <div className="ujw__gallery">
-        <Gallery images={mangaGallery} />
-      </div>
+      <UJWGallery />
       <LogosUJW />
     </>
   );

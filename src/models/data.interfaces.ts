@@ -67,3 +67,9 @@ export interface IGalleryImage {
   src: string;
   alt: string;
 }
+
+export interface IUJWDay {
+  name: string;
+  image: string;
+  gallery: IGalleryImage[];
+}
