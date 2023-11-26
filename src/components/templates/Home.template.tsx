@@ -19,6 +19,7 @@ export const HomeTemplate = () => {
         ratione! Commodi dicta dolores eius et incidunt laborum maxime mollitia
         nobis, nulla sed voluptate voluptatem!"
         to="/nosotros"
+        className="home__about-us"
       />
       <Activities />
       <Logos logos={logosUNI} />

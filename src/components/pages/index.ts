@@ -6,3 +6,4 @@ export * from './WorkShops.tsx';
 export * from './Screenings.tsx';
 export * from './OtherActivities.tsx';
 export * from './AboutUs.tsx';
+export * from './UNIJapanWeek.tsx';

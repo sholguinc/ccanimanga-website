@@ -21,7 +21,7 @@ export const logosUNI: ILogo[] = [
   },
 ];
 
-export const otherLogos: ILogo[] = [
+const otherLogos: ILogo[] = [
   {
     name: 'Museo UNI',
     img: baseUrl + '/logo-museo.png',

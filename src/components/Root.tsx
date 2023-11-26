@@ -10,6 +10,7 @@ import {
   Workshops,
   Screenings,
   OtherActivities,
+  UNIJapanWeek,
 } from '@/components/pages';
 
 const Root = () => {
@@ -26,7 +27,7 @@ const Root = () => {
               <Route path=":workshopId" element={<Workshop />} />
             </Route>
 
-            <Route path="/uni-japan-week" element={<Home />} />
+            <Route path="/uni-japan-week" element={<UNIJapanWeek />} />
             <Route path="/proyecciones" element={<Screenings />} />
             <Route path="/otras-actividades" element={<OtherActivities />} />
           </Route>
