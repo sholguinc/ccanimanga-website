@@ -53,7 +53,7 @@ export interface IWorkshop {
   description: string;
   descriptionImage: string;
   figure: string;
-  figureTransform: string;
+  figureTransform?: string;
   gallery: IGalleryImage[];
 }
 
