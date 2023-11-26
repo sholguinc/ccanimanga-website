@@ -1,15 +1,15 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 
 import { Text } from '@/components/atoms';
 import { Gallery, UJWGrid } from '@/components/organisms';
 
 import { UJWDays } from '@/data';
-import { IUJWDay } from '@/models';
+import { UJWContext } from '@/context';
 
 import Stroke from '@/assets/patterns/stroke.svg?react';
 
 export const UJWGallery = () => {
-  const [day] = useState<IUJWDay>(UJWDays[0]);
+  const { day } = useContext(UJWContext);
 
   return (
     <div className="ujw-gallery__container">

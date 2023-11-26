@@ -1,12 +1,14 @@
 import { LogosUJW } from '@/components/molecules';
 import { Banner, InfoCard, UJWGallery } from '@/components/organisms';
 
+import { UJWContextProvider } from '@/context';
+
 import UJWBanner from '@/assets/images/uni-japan-week.jpg';
 import UJWImage from '@/assets/figures/yukata-girl.png';
 
 export const UNIJapanWeekTemplate = () => {
   return (
-    <>
+    <UJWContextProvider>
       <Banner title="UNI Japan Week" img={UJWBanner} />
       <InfoCard
         title=""
@@ -30,6 +32,6 @@ export const UNIJapanWeekTemplate = () => {
       />
       <UJWGallery />
       <LogosUJW />
-    </>
+    </UJWContextProvider>
   );
 };

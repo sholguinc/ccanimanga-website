@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { HTMLDivType } from '@/models';
+import { HTMLDivType, IUJWDay } from '@/models';
 
 export interface IMenuContext {
   menu: boolean;
@@ -33,3 +33,10 @@ export interface ILightBoxContext {
 }
 
 export type LightBoxContextType = React.Context<ILightBoxContext>;
+
+export interface IUJWContext {
+  day: IUJWDay;
+  setDay: React.Dispatch<React.SetStateAction<IUJWDay>>;
+}
+
+export type UJWContextType = React.Context<IUJWContext>;
