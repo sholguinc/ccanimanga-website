@@ -22,7 +22,7 @@ export const UJWDays: IUJWDay[] = [
   },
   {
     name: 'Anime no Hi',
-    image: baseUrl + '/anime-no-hi.webp',
+    image: baseUrl + '/anime-no-hi.jpg',
     gallery: musicGallery,
   },
   {

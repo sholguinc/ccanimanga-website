@@ -15,9 +15,14 @@ export const UJWGrid = ({ days }: IUJWGrid) => {
           <figure className="ujw-day__figure">
             <img src={day.image} alt={day.name} className="ujw-day__img" />
           </figure>
-
-          <div className="ujw-day__name">
-            <Text size="xx-large" weight="semi-bold" color="white">
+          <div className="ujw-day__name-container">
+            <Text
+              size="custom"
+              weight="semi-bold"
+              color="white"
+              family="quicksand"
+              className="ujw-day__name"
+            >
               {day.name}
             </Text>
           </div>

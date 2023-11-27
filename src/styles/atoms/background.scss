@@ -3,17 +3,21 @@
   height: 100%;
 }
 
-@mixin set-full-absolute {
-  @include set-full;
-
+@mixin set-absolute {
   position: absolute;
   top: 0;
   left: 0;
 }
 
+@mixin set-full-absolute {
+  @include set-full;
+  @include set-absolute;
+}
+
 .background__container {
   position: relative;
-  @include set-full;
+  width: 100%;
+  height: fit-content;
 
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
@@ -35,6 +39,6 @@
 }
 
 .background__children {
-  @include set-full-absolute;
+  position: relative;
   z-index: 1;
 }

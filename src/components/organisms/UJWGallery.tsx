@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { Text } from '@/components/atoms';
+import { Text, Background } from '@/components/atoms';
 import { Gallery, UJWGrid } from '@/components/organisms';
 
 import { UJWDays } from '@/data';
@@ -33,14 +33,10 @@ export const UJWGallery = () => {
         <Stroke className="ujw-gallery__stroke odd" />
       </div>
       <div className="ujw-gallery__section">
-        <div
-          className="ujw-gallery"
-          style={{
-            background: `url(${day.image})`,
-            backgroundAttachment: 'fixed',
-          }}
-        >
-          <Gallery images={day.gallery} title={day.name} />
+        <div className="ujw-gallery">
+          <Background alt={day.name} src={day.image}>
+            <Gallery images={day.gallery} title={day.name} />
+          </Background>
         </div>
         <Stroke className="ujw-gallery__stroke even" />
       </div>

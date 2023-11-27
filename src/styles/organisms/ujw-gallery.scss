@@ -19,7 +19,7 @@
   $angle: 2deg;
 
   &.odd {
-    transform: translate(-50%, 50%) scale(2.2, .8) rotate($angle);
+    transform: translate(-50%, 60%) scale(2.3, .9) rotate($angle);
   }
 
   &.even {
@@ -35,24 +35,11 @@
   }
 
   &.stroke-header-bottom {
-    transform: translate(-50%, 50%) scale(-2.1, .8) rotate($angle);
+    transform: translate(-50%, 60%) scale(-2.1, .8) rotate($angle);
   }
 }
 
 .ujw-gallery {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: inherit;
-    filter: brightness(.5);
-  }
-
   &__header {
     background-color: $color-white;
     padding: 10px $distance-x-padding 36px;

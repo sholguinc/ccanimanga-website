@@ -76,7 +76,7 @@ $transition-timing-function: ease-in-out;
     height: 100%;
   }
 
-  &__name {
+  &__name-container {
     position: absolute;
     top: 0;
 
@@ -96,6 +96,10 @@ $transition-timing-function: ease-in-out;
     }
   }
 
+  &__name {
+    font-size: 1.65rem;
+  }
+
   &:hover {
     .ujw-day__figure {
       filter: brightness(.4);
@@ -104,9 +108,15 @@ $transition-timing-function: ease-in-out;
   }
 }
 
+@media (max-width: $xl) {
+  .ujw-day__name {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: $sm) {
   .ujw-day {
-    &__name {
+    &__name-container {
       opacity: 1;
       transition: none;
       color: $color-fake-white;
