@@ -10,7 +10,7 @@
 
 .logos__container {
   background-color: $color-white;
-  margin: 16px 0 72px;
+  margin: 16px 0 $main-content-gap;
   padding: 24px 0;
 }
 
@@ -41,19 +41,7 @@
   }
 }
 
-@media (max-width: $md) {
-  .logos {
-    gap: 1%;
-  }
-
-  @include set-width-logo(148px);
-
-  .logos__container {
-    margin-bottom: $mobile-content-gap;
-  }
-}
-
-@media (max-width: $sm) {
+@media (max-width: 900px) {
   $logo-width: 148px;
 
   .logos {
@@ -64,5 +52,11 @@
 
   .logo {
     width: $logo-width;
+  }
+}
+
+@media (max-width: $md) {
+  .logos__container {
+    margin-bottom: $mobile-content-gap;
   }
 }

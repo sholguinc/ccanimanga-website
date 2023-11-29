@@ -1,7 +1,6 @@
 import { Logos } from '@/components/molecules';
 import { Slider, InfoCard, Activities } from '@/components/organisms';
 
-import { logosUNI } from '@/data';
 import Anigirl from '@/assets/figures/artist.png';
 
 export const HomeTemplate = () => {
@@ -19,9 +18,10 @@ export const HomeTemplate = () => {
         ratione! Commodi dicta dolores eius et incidunt laborum maxime mollitia
         nobis, nulla sed voluptate voluptatem!"
         to="/nosotros"
+        className="home__about-us"
       />
       <Activities />
-      <Logos logos={logosUNI} />
+      <Logos />
     </>
   );
 };

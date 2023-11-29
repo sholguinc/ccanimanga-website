@@ -5,8 +5,8 @@ import {
   IActivityData,
   SocialMediaSite,
   IWorkshop,
-  ILogo,
   IGalleryImage,
+  IUJWDay,
 } from '@/models';
 
 // Base
@@ -76,6 +76,11 @@ export interface ICardImage {
   index: number;
 }
 
+export interface ILoading {
+  backgroundColor?: string;
+  text?: string;
+}
+
 // Molecules
 export interface ISocialMediaList {
   direction?: 'row' | 'column';
@@ -85,10 +90,6 @@ export interface ISocialMediaList {
 
 export interface IActivity {
   activity: IActivityData;
-}
-
-export interface ILogos {
-  logos: ILogo[];
 }
 
 export interface IWorkshopBanner {
@@ -131,6 +132,10 @@ export interface IGallery {
 
 export interface ILightBox {
   slides: IGalleryImage[];
+}
+
+export interface IUJWGrid {
+  days: IUJWDay[];
 }
 
 // Templates

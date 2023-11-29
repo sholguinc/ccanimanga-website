@@ -85,7 +85,7 @@ export const workshops: StringKeyObject<IWorkshop> = {
       'suscipit vero voluptatem!',
     descriptionImage: baseUrl + '/description/papercraft.jpg',
     figure: baseUrl + '/figure/japones.png',
-    figureTransform: 'scale(.6)',
+    figureTransform: 'scale(1.25)',
     gallery: mangaGallery,
   },
 };

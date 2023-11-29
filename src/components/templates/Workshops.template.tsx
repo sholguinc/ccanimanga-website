@@ -32,7 +32,7 @@ export const WorkshopsTemplate = ({ workshops }: IWorkshopsTemplate) => {
         Beatae est non sapiente. Aut et in non quis repellendus, saepsuscipit
         vero voluptatem!"
         image={OtherWorkshops}
-        imageTransform="translateY(15%)"
+        imageTransform="scale(1.6) translate(-2%, 15%)"
         className="other-workshops"
       />
     </>

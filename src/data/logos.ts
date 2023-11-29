@@ -6,6 +6,7 @@ export const logosUNI: ILogo[] = [
   {
     name: 'CCAM',
     img: baseUrl + '/ccam.png',
+    transform: 'scale(1.6)',
   },
   {
     name: 'Centro Cultural UNI',
@@ -14,6 +15,7 @@ export const logosUNI: ILogo[] = [
   {
     name: 'RSDS',
     img: baseUrl + '/RSDSUNI.png',
+    transform: 'scale(1.6)',
   },
   {
     name: 'UNI',
@@ -21,7 +23,7 @@ export const logosUNI: ILogo[] = [
   },
 ];
 
-export const otherLogos: ILogo[] = [
+const otherLogos: ILogo[] = [
   {
     name: 'Museo UNI',
     img: baseUrl + '/logo-museo.png',
@@ -29,6 +31,7 @@ export const otherLogos: ILogo[] = [
   {
     name: '150 años JP',
     img: baseUrl + '/150-aniversario-JPN.png',
+    transform: 'scale(1.6)',
   },
   {
     name: 'Berioska',

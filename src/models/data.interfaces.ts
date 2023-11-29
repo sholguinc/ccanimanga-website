@@ -53,16 +53,23 @@ export interface IWorkshop {
   description: string;
   descriptionImage: string;
   figure: string;
-  figureTransform: string;
+  figureTransform?: string;
   gallery: IGalleryImage[];
 }
 
 export interface ILogo {
   name: string;
   img: string;
+  transform?: string;
 }
 
 export interface IGalleryImage {
   src: string;
   alt: string;
+}
+
+export interface IUJWDay {
+  name: string;
+  image: string;
+  gallery: IGalleryImage[];
 }
