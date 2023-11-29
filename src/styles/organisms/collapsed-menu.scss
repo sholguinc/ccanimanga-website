@@ -19,7 +19,13 @@ $route-height: 64px;
 .collapsed-menu__hamburger {
   position: absolute;
   top: 0;
-  right: 2px;
+  right: 0;
+  height: $route-height;
+  width: $route-height;
+
+  display: flex;
+  align-items: start;
+  justify-content: end;
 }
 
 .collapsed-menu {
