@@ -76,6 +76,11 @@ export interface ICardImage {
   index: number;
 }
 
+export interface ILoading {
+  backgroundColor?: string;
+  text?: string;
+}
+
 // Molecules
 export interface ISocialMediaList {
   direction?: 'row' | 'column';

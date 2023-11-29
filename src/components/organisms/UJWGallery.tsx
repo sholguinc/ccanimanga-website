@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 
 import { Text, Background } from '@/components/atoms';
+import { UJWLoading } from '@/components/molecules';
 import { Gallery, UJWGrid } from '@/components/organisms';
 
 import { UJWDays } from '@/data';
@@ -40,6 +41,7 @@ export const UJWGallery = () => {
         </div>
         <Stroke className="ujw-gallery__stroke even" />
       </div>
+      <UJWLoading />
     </div>
   );
 };

@@ -1,5 +1,7 @@
-.loading-template {
+.loading {
   position: fixed;
+  top: 0;
+  left: 0;
   cursor: wait;
   width: 100vw;
   height: 100vh;
@@ -7,9 +9,11 @@
   margin: 0;
   background-color: $ccam-red;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
+  gap: 12px;
 
   &__content {
     width: 8vmax;

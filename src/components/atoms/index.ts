@@ -6,3 +6,4 @@ export * from './Button.tsx';
 export * from './DelayLink.tsx';
 export * from './Background.tsx';
 export * from './CardImage.tsx';
+export * from './Loading.tsx';

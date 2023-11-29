@@ -6,12 +6,12 @@ import { IUJWGrid } from '@/models';
 import { UJWContext } from '@/context';
 
 export const UJWGrid = ({ days }: IUJWGrid) => {
-  const { setDay } = useContext(UJWContext);
+  const { setDayLoading } = useContext(UJWContext);
 
   return (
     <section className="ujw-grid">
       {days.map((day, index) => (
-        <div key={index} className="ujw-day" onClick={() => setDay(day)}>
+        <div key={index} className="ujw-day" onClick={() => setDayLoading(day)}>
           <figure className="ujw-day__figure">
             <img src={day.image} alt={day.name} className="ujw-day__img" />
           </figure>

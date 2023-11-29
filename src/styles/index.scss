@@ -9,6 +9,7 @@
 @import "./atoms/button.scss";
 @import "./atoms/background.scss";
 @import "./atoms/card-image.scss";
+@import "./atoms/loading.scss";
 
 //import molecules
 @import "./molecules/scrollbar.scss";
@@ -39,7 +40,6 @@
 @import "./templates/home-template.scss";
 @import "./templates/layout-template.scss";
 @import "./templates/error-template.scss";
-@import "./templates/loading-template.scss";
 @import "./templates/workshops-template.scss";
 @import "./templates/about-us-template.scss";
 @import "./templates/uni-japan-week-template.scss";
