@@ -1,16 +1,76 @@
-.collapsed-menu {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
+@mixin set-circle-size($size) {
+  width: $size;
+  height: $size;
+}
 
-  &__hamburger {
-    padding-right: 4px;
+$route-height: 64px;
+
+.collapsed-menu__container {
+  display: none;
+  z-index: 500;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  height: calc(4 * $route-height);
+  overflow: hidden;
+}
+
+.collapsed-menu__hamburger {
+  position: absolute;
+  top: 0;
+  right: 2px;
+}
+
+.collapsed-menu {
+  overflow: hidden;
+  position: relative;
+  float: right;
+  margin: 0;
+
+  @include set-circle-size(62px);
+
+  border-bottom-left-radius: 100%;
+
+  &__routes {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+
+    background-color: $ccam-red;
   }
+
+  &__route {
+    width: 100%;
+    text-align: center;
+    height: $route-height;
+    box-sizing: border-box;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(255, 255, 255, .6);
+    }
+
+    &__text {
+      height: $route-height;
+      padding: 22px;
+      box-sizing: border-box;
+    }
+  }
+
+  // animation
+  transition-property: width, height;
+  transition-duration: 440ms;
+  transition-timing-function: ease-in-out;
+}
+
+.collapsed-menu.opened {
+  @include set-circle-size(100vw)
 }
 
 @media (max-width: $md) {
-  .collapsed-menu {
-    display: flex;
+  .collapsed-menu__container {
+    display: block;
   }
 }

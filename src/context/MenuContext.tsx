@@ -13,16 +13,11 @@ export const MenuContext: MenuContextType = createContext<IMenuContext>(
 export function MenuContextProvider({ children }: IChildren) {
   const [menu, setMenu] = useState(false);
 
-  const openMenu = (): void => {
-    setMenu(!menu);
-  };
-
   return (
     <MenuContext.Provider
       value={{
         menu,
         setMenu,
-        openMenu,
       }}
     >
       {children}
