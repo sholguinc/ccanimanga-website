@@ -7,8 +7,9 @@
 /* Local Fonts */
 
 @font-face {
-  font-family: "HIRO MISAKE";
+  font-family: 'HIRO MISAKE';
   src: local("HIRO MISAKE"),
+  url('@/fonts/HIRO_MISAKE.woff') format('woff'),
   url("@/fonts/HIRO_MISAKE.ttf") format("truetype");
   font-weight: bold;
 }
