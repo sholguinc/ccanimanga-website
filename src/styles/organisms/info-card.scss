@@ -53,59 +53,6 @@ $y-padding: $distance-x-padding;
   }
 }
 
-// animation
-$duration: 1.2s;
-$translate-distance: 105vw;
-$timing-function: ease-out;
-
-@mixin set-animation-left() {
-  @keyframes move-in-left {
-    0% {
-      transform: translateX(-1 * $translate-distance);
-    }
-    80% {
-      transform: translateX(0.05 * $translate-distance);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  .info-card__image-movement {
-    visibility: hidden;
-  }
-
-  .info-card__image-movement.visible {
-    visibility: visible;
-    animation: move-in-left $duration $timing-function;
-    animation-fill-mode: forwards;
-  }
-}
-
-@mixin set-animation-right() {
-  @keyframes move-in-right {
-    0% {
-      transform: translateX($translate-distance);
-    }
-    80% {
-      transform: translateX(-0.05 * $translate-distance);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  .info-card__image-movement {
-    visibility: hidden;
-  }
-
-  .info-card__image-movement.visible {
-    visibility: visible;
-    animation: move-in-right $duration $timing-function;
-    animation-fill-mode: forwards;
-  }
-}
-
 .info-card__wrapper {
   width: 100%;
   background-color: $color-white;
@@ -139,12 +86,10 @@ $timing-function: ease-out;
 
   // circle-figure
   @include set-circle-figure(700px);
-  @include set-animation-left;
 
   // reverse
   &.reverse {
     flex-direction: row-reverse;
-    @include set-animation-right;
   }
 
   // text

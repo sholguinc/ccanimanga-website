@@ -1,4 +1,5 @@
 import { useInView } from 'react-intersection-observer';
+import { AnimatePresence, motion, MotionProps } from 'framer-motion';
 
 import { Button, Text } from '@/components/atoms';
 
@@ -20,9 +21,22 @@ export const InfoCard = ({
   };
 
   const { ref: circleRef, inView } = useInView(options);
-  const showImage = inView ? 'visible' : '';
-
   const reverseCard = reverse ? 'reverse' : '';
+
+  const getMotionDivProps = (reverse: boolean): MotionProps => {
+    const initTranslate = reverse ? '150vw' : '-150vw';
+
+    return {
+      initial: { x: initTranslate },
+      animate: { x: 0 },
+      transition: {
+        type: 'spring',
+        mass: 1.6,
+        stiffness: 90,
+        damping: 16,
+      },
+    };
+  };
 
   return (
     <div className={`info-card__wrapper ${className}`}>
@@ -49,14 +63,21 @@ export const InfoCard = ({
             <div className="info-card__circle" />
           </div>
           <div className="info-card__image-container">
-            <div className={`info-card__image-movement ${showImage}`}>
-              <img
-                src={image}
-                alt={title}
-                className="info-card__image"
-                style={{ transform: imageTransform }}
-              />
-            </div>
+            <AnimatePresence>
+              {inView && (
+                <motion.div
+                  className="info-card__image-movement"
+                  {...getMotionDivProps(reverse)}
+                >
+                  <img
+                    src={image}
+                    alt={title}
+                    className="info-card__image"
+                    style={{ transform: imageTransform }}
+                  />
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </div>
       </div>

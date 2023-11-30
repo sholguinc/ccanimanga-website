@@ -5,7 +5,6 @@ import { HTMLDivType, IUJWDay } from '@/models';
 export interface IMenuContext {
   menu: boolean;
   setMenu: React.Dispatch<React.SetStateAction<boolean>>;
-  openMenu: () => void;
 }
 
 export type MenuContextType = React.Context<IMenuContext>;
