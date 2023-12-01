@@ -9,7 +9,9 @@
 @font-face {
   font-family: 'HIRO MISAKE';
   src: local("HIRO MISAKE"),
+  url('@/fonts/HIRO_MISAKE.eot') format('embedded-opentype'),
   url('@/fonts/HIRO_MISAKE.woff') format('woff'),
-  url("@/fonts/HIRO_MISAKE.ttf") format("truetype");
+  url("@/fonts/HIRO_MISAKE.ttf") format("truetype"),
+  url('@/fonts/HIRO_MISAKE.svg#HIROMISAKERegular') format('svg');
   font-weight: bold;
 }
