@@ -1,7 +1,8 @@
 import { IGalleryImage } from '@/models';
+import { imageStorage } from '@/data';
 
-// const baseUrl = '/images/gallery/uni-japan-week';
-const baseUrl = '/images/gallery/workshops';
+// const baseUrl = imageStorage + '/galleries/uni-japan-week';
+const baseUrl = imageStorage + '/galleries/workshops';
 
 export const musicGallery: IGalleryImage[] = [
   {

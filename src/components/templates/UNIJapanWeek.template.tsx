@@ -2,9 +2,7 @@ import { LogosUJW } from '@/components/molecules';
 import { Banner, InfoCard, UJWGallery } from '@/components/organisms';
 
 import { UJWContextProvider } from '@/context';
-
-import UJWBanner from '@/assets/images/uni-japan-week.jpg';
-import UJWImage from '@/assets/figures/yukata-girl.png';
+import { UJWBanner, YukataGirl } from '@/data';
 
 export const UNIJapanWeekTemplate = () => {
   return (
@@ -25,7 +23,7 @@ export const UNIJapanWeekTemplate = () => {
         Accusantium beatae corpori deseruntearum error placeat, reprehenderit?
         Beatae est non sapiente. Aut et in non quis repellendus, saepsuscipit
         vero voluptatem."
-        image={UJWImage}
+        image={YukataGirl}
         imageTransform="translateY(10%)"
         reverse={true}
         className="ujw__description"

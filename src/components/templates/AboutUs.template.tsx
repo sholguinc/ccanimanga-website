@@ -1,9 +1,7 @@
 import { AboutUsSection } from '@/components/molecules';
 import { Banner } from '@/components/organisms';
 
-import AboutUsBanner from '@/assets/images/about-us.jpg';
-import CcamGroup from '@/assets/images/ccam-group.jpg';
-import Uni from '@/assets/images/uni.jpg';
+import { AboutUsBanner, CCAMGroup, UNI } from '@/data';
 
 export const AboutUsTemplate = () => {
   return (
@@ -17,7 +15,7 @@ export const AboutUsTemplate = () => {
           totam voluptate?. Accusantium excepturi illum, quos soluta tempora
           totam voluptate?. Accusantium excepturi illum, quos soluta tempora
           totam voluptate?"
-        image={CcamGroup}
+        image={CCAMGroup}
       />
       <AboutUsSection
         title="Ubicación"
@@ -25,7 +23,7 @@ export const AboutUsTemplate = () => {
           consectetur eligendi illo nam neque, nulla, possimus quas, quidem quos
           repellendus sint. Accusantium excepturi illum, quos soluta tempora
           totam voluptate?"
-        image={Uni}
+        image={UNI}
         reverse={true}
       />
       <AboutUsSection
@@ -34,7 +32,7 @@ export const AboutUsTemplate = () => {
           consectetur eligendi illo nam neque, nulla, possimus quas, quidem quos
           repellendus sint. Accusantium excepturi illum, quos soluta tempora
           totam voluptate?"
-        image={Uni}
+        image={UNI}
       />
       <AboutUsSection
         title="Comunidad"
@@ -42,7 +40,7 @@ export const AboutUsTemplate = () => {
           consectetur eligendi illo nam neque, nulla, possimus quas, quidem quos
           repellendus sint. Accusantium excepturi illum, quos soluta tempora
           totam voluptate?."
-        image={Uni}
+        image={UNI}
         reverse={true}
         className="last-section"
       />

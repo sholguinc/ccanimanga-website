@@ -1,8 +1,7 @@
 import { IUJWDay } from '@/models';
+import { imageStorage, musicGallery } from '@/data';
 
-import { musicGallery } from '@/data';
-
-const baseUrl = '/images/uni-japan-week';
+const baseUrl = imageStorage + '/uni-japan-week';
 
 export const UJWDays: IUJWDay[] = [
   {

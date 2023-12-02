@@ -1,3 +1,4 @@
+export * from './image-storage.ts';
 export * from './workshop-galleries.ts';
 export * from './activity-galleries.ts';
 export * from './ujw-galleries.ts';
@@ -9,3 +10,4 @@ export * from './sliders.ts';
 export * from './routes.ts';
 export * from './logos.ts';
 export * from './ujw-days.ts';
+export * from './pictures.ts';

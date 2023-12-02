@@ -1,6 +1,7 @@
 import { ILogo } from '@/models';
+import { imageStorage } from '@/data';
 
-const baseUrl = '/logos';
+const baseUrl = imageStorage + '/logos';
 
 export const logosUNI: ILogo[] = [
   {

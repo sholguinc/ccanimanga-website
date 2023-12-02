@@ -2,7 +2,7 @@ import { Text, DelayLink } from '@/components/atoms';
 import { CollapsedMenu } from '@/components/organisms';
 import { routes } from '@/data';
 
-import CCAMLogo from '@/assets/logos/ccam-white.png';
+import CCAMLogo from '@/assets/ccam.png';
 
 export const Header = () => {
   return (

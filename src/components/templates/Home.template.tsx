@@ -1,7 +1,7 @@
 import { Logos } from '@/components/molecules';
 import { Slider, InfoCard, Activities } from '@/components/organisms';
 
-import Anigirl from '@/assets/figures/artist.png';
+import { Anigirl } from '@/data';
 
 export const HomeTemplate = () => {
   return (

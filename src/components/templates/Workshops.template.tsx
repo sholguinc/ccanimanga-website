@@ -1,9 +1,7 @@
 import { Banner, InfoCard } from '@/components/organisms';
 
 import { IWorkshopsTemplate } from '@/models';
-
-import WorkshopsBanner from '@/assets/images/workshops.jpg';
-import OtherWorkshops from '@/assets/figures/other-workshops.png';
+import { WorkshopsBanner, OtherWorkshops } from '@/data';
 
 export const WorkshopsTemplate = ({ workshops }: IWorkshopsTemplate) => {
   return (

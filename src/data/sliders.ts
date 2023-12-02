@@ -1,7 +1,7 @@
 import { ISlide, FixedLengthArray } from '@/models';
+import { imageStorage } from '@/data';
 
-const baseUrl = '/images/slider';
-
+const baseUrl = imageStorage + '/slider';
 export const slides: FixedLengthArray<ISlide, 4> = [
   {
     alt: 'slide-01',

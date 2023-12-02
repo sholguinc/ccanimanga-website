@@ -1,6 +1,7 @@
 import { IActivityData, FixedLengthArray } from '@/models';
+import { imageStorage } from '@/data';
 
-const baseUrl = '/images/activities';
+const baseUrl = imageStorage + '/activities';
 
 export const activities: FixedLengthArray<IActivityData, 4> = [
   {
