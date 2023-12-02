@@ -1,17 +1,18 @@
+import { lazy } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import { LayoutTemplate } from '@/components/templates';
-import {
-  Home,
-  Error,
-  Loading,
-  AboutUs,
-  Workshop,
-  Workshops,
-  Screenings,
-  OtherActivities,
-  UNIJapanWeek,
-} from '@/components/pages';
+import { Error, Loading } from '@/components/pages';
+
+const Home = lazy(() => import('@/components/pages/Home.tsx'));
+const AboutUs = lazy(() => import('@/components/pages/AboutUs.tsx'));
+const Workshops = lazy(() => import('@/components/pages/Workshops.tsx'));
+const Workshop = lazy(() => import('@/components/pages/Workshop.tsx'));
+const Screenings = lazy(() => import('@/components/pages/Screenings.tsx'));
+const UNIJapanWeek = lazy(() => import('@/components/pages/UNIJapanWeek.tsx'));
+const OtherActivities = lazy(
+  () => import('@/components/pages/OtherActivities.tsx'),
+);
 
 const Root = () => {
   return (

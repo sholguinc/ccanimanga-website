@@ -5,7 +5,7 @@ import { screeningsGallery } from '@/data';
 
 import ScreeningsBackground from '@/assets/images/screenings.jpg';
 
-export const Screenings = () => {
+const Screenings = () => {
   const props: IActivityTemplate = {
     name: 'Proyecciones',
     background: {
@@ -25,3 +25,5 @@ export const Screenings = () => {
 
   return <ActivityTemplate {...props} />;
 };
+
+export default Screenings;

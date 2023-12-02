@@ -1,9 +1,11 @@
 import { UNIJapanWeekTemplate } from '@/components/templates';
 
-export const UNIJapanWeek = () => {
+const UNIJapanWeek = () => {
   return (
     <>
       <UNIJapanWeekTemplate />
     </>
   );
 };
+
+export default UNIJapanWeek;

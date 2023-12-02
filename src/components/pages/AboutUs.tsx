@@ -1,9 +1,11 @@
 import { AboutUsTemplate } from '@/components/templates';
 
-export const AboutUs = () => {
+const AboutUs = () => {
   return (
     <>
       <AboutUsTemplate />
     </>
   );
 };
+
+export default AboutUs;
