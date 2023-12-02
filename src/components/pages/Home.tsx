@@ -1,10 +1,10 @@
-import { HomeTemplate } from '@/components/templates';
+import { HomeTemplate, ImagesLoadedTemplate } from '@/components/templates';
 
 const Home = () => {
   return (
-    <>
+    <ImagesLoadedTemplate>
       <HomeTemplate />
-    </>
+    </ImagesLoadedTemplate>
   );
 };
 

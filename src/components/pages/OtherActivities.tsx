@@ -1,4 +1,4 @@
-import { ActivityTemplate } from '@/components/templates';
+import { ActivityTemplate, ImagesLoadedTemplate } from '@/components/templates';
 
 import { IActivityTemplate, IBackground, IDescription } from '@/models';
 import { OtherActivitiesBanner, screeningsGallery } from '@/data';
@@ -21,7 +21,11 @@ const OtherActivities = () => {
     gallery: screeningsGallery,
   };
 
-  return <ActivityTemplate {...props} />;
+  return (
+    <ImagesLoadedTemplate>
+      <ActivityTemplate {...props} />
+    </ImagesLoadedTemplate>
+  );
 };
 
 export default OtherActivities;

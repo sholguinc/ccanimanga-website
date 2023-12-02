@@ -19,6 +19,7 @@ export type ScrollContextType = React.Context<IScrollContext>;
 export interface INavigateContext {
   loading: boolean;
   setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  setDelayedLoading: (loading: boolean) => void;
 }
 
 export type NavigateContextType = React.Context<INavigateContext>;

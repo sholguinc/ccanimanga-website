@@ -12,11 +12,18 @@ export const NavigateContext: NavigateContextType =
 export function NavigateContextProvider({ children }: IChildren) {
   const [loading, setLoading] = useState(true);
 
+  const setDelayedLoading = (loading: boolean) => {
+    setTimeout(() => {
+      setLoading(loading);
+    }, 300);
+  };
+
   return (
     <NavigateContext.Provider
       value={{
         loading,
         setLoading,
+        setDelayedLoading,
       }}
     >
       {children}

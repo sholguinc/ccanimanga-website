@@ -5,7 +5,7 @@ import { LoadingTemplate } from '@/components/templates';
 export const Loading = () => {
   return (
     <>
-      <LoadingTemplate duration={500} />
+      <LoadingTemplate />
       <Outlet />
     </>
   );

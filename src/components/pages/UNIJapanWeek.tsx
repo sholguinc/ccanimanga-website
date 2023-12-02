@@ -1,10 +1,13 @@
-import { UNIJapanWeekTemplate } from '@/components/templates';
+import {
+  UNIJapanWeekTemplate,
+  ImagesLoadedTemplate,
+} from '@/components/templates';
 
 const UNIJapanWeek = () => {
   return (
-    <>
+    <ImagesLoadedTemplate>
       <UNIJapanWeekTemplate />
-    </>
+    </ImagesLoadedTemplate>
   );
 };
 

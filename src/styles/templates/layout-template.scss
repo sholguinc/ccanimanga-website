@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
 
-  &__body {
+  &__body .images-loaded-div {
     width: 100%;
     height: 100%;
     position: relative;
@@ -24,7 +24,7 @@
 
 @media (max-width: $md) {
   .layout-template {
-    &__body {
+    &__body .images-loaded-div {
       gap: $mobile-content-gap;
     }
   }

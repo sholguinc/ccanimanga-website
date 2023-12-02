@@ -7,3 +7,4 @@ export * from './Workshops.template.tsx';
 export * from './Activity.template.tsx';
 export * from './AboutUs.template.tsx';
 export * from './UNIJapanWeek.template.tsx';
+export * from './ImagesLoaded.template.tsx';

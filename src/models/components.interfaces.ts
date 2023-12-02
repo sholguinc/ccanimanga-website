@@ -144,10 +144,6 @@ export interface IErrorTemplate {
   subtext?: string;
 }
 
-export interface ILoadingTemplate {
-  duration: number;
-}
-
 export interface IWorkshopTemplate {
   workshop: IWorkshop;
 }
