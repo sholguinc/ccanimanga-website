@@ -7,7 +7,7 @@ import { Gallery, UJWGrid } from '@/components/organisms';
 import { UJWDays } from '@/data';
 import { UJWContext } from '@/context';
 
-import Stroke from '@/assets/patterns/stroke.svg?react';
+import Stroke from '@/assets/stroke.svg?react';
 
 export const UJWGallery = () => {
   const { day } = useContext(UJWContext);

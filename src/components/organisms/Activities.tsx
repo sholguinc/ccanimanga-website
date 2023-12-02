@@ -4,7 +4,7 @@ import { Activity } from '@/components/molecules';
 import { activities as activitiesFixed } from '@/data';
 import { IActivityData } from '@/models';
 
-import Stroke from '@/assets/patterns/stroke.svg?react';
+import Stroke from '@/assets/stroke.svg?react';
 
 export const Activities = () => {
   const activities = activitiesFixed as IActivityData[];

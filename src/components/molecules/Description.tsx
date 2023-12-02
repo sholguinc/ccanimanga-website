@@ -2,7 +2,7 @@ import { Text } from '@/components/atoms';
 
 import { IDescription } from '@/models';
 
-import Stroke from '@/assets/patterns/stroke.svg?react';
+import Stroke from '@/assets/stroke.svg?react';
 
 export const Description = ({ text, img }: IDescription) => {
   return (

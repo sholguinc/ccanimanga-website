@@ -1,7 +1,7 @@
 import { Text, DelayLink } from '@/components/atoms';
 import { IButton } from '@/models';
 
-import Arrow from '@/assets/icons/arrow.svg?react';
+import Arrow from '@/assets/arrow.svg?react';
 
 export const Button = ({
   text = 'Ver más',

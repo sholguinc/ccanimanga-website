@@ -7,7 +7,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { ICardImage } from '@/models';
 import { LightBoxContext } from '@/context';
 
-import Blur from '@/assets/patterns/blur.jpg';
+import Blur from '@/assets/blur.jpg';
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
