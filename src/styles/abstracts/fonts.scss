@@ -8,10 +8,11 @@
 
 @font-face {
   font-family: 'HIRO MISAKE';
-  src: local("HIRO MISAKE"),
-  url('@/fonts/HIRO_MISAKE.eot') format('embedded-opentype'),
-  url('@/fonts/HIRO_MISAKE.woff') format('woff'),
-  url("@/fonts/HIRO_MISAKE.ttf") format("truetype"),
-  url('@/fonts/HIRO_MISAKE.svg#HIROMISAKERegular') format('svg');
-  font-weight: bold;
+  src: url('@/fonts/HIRO_MISAKE.eot');
+  src: url('@/fonts/HIRO_MISAKE.eot?#iefix') format('embedded-opentype');
+  src: url('@/fonts/HIRO_MISAKE.svg#HIROMISAKERegular') format('svg');
+  src: url('@/fonts/HIRO_MISAKE.woff') format('woff');
+  src: url('@/fonts/HIRO_MISAKE.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
 }
