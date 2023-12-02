@@ -34,6 +34,7 @@ export const AboutUsSection = ({
               <img
                 src={image}
                 alt={title}
+                loading="eager"
                 className="about-us-section__image"
               />
             </div>

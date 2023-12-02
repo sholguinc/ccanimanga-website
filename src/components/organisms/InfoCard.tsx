@@ -72,6 +72,7 @@ export const InfoCard = ({
                   <img
                     src={image}
                     alt={title}
+                    loading="eager"
                     className="info-card__image"
                     style={{ transform: imageTransform }}
                   />

@@ -10,7 +10,12 @@ export const Description = ({ text, img }: IDescription) => {
       <Text size="x-large" family="quicksand" className="description__text">
         {text}
       </Text>
-      <img src={img} alt="description-image" className="description__image" />
+      <img
+        src={img}
+        alt="description-image"
+        loading="eager"
+        className="description__image"
+      />
       <Stroke className="description__stroke" />
     </div>
   );

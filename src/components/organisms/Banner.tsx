@@ -9,6 +9,7 @@ export const Banner = ({ title, img, brightness = 0.5 }: IBanner) => {
         <img
           src={img}
           alt={title}
+          loading="eager"
           style={{ filter: `brightness(${brightness})` }}
           className="banner__image"
         />

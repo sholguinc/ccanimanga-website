@@ -36,7 +36,12 @@ export const Slider = () => {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index} className="slider__slide">
-            <img src={slide.src} alt={slide.alt} className="slider__image" />
+            <img
+              src={slide.src}
+              alt={slide.alt}
+              loading="eager"
+              className="slider__image"
+            />
           </SwiperSlide>
         ))}
       </Swiper>

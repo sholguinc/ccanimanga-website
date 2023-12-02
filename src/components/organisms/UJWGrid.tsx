@@ -13,7 +13,12 @@ export const UJWGrid = ({ days }: IUJWGrid) => {
       {days.map((day, index) => (
         <div key={index} className="ujw-day" onClick={() => setDayLoading(day)}>
           <figure className="ujw-day__figure">
-            <img src={day.image} alt={day.name} className="ujw-day__img" />
+            <img
+              src={day.image}
+              alt={day.name}
+              loading="eager"
+              className="ujw-day__img"
+            />
           </figure>
           <div className="ujw-day__name-container">
             <Text
