@@ -7,3 +7,4 @@ export * from './DelayLink.tsx';
 export * from './Background.tsx';
 export * from './CardImage.tsx';
 export * from './Loading.tsx';
+export * from './LazyImage.tsx';

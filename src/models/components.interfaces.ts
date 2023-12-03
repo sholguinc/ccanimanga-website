@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import { LinkProps } from 'react-router-dom';
 
 import {
@@ -79,6 +79,13 @@ export interface ICardImage {
 export interface ILoading {
   backgroundColor?: string;
   text?: string;
+}
+
+export interface ILazyImage extends IClassName {
+  src: string;
+  alt: string;
+  style?: CSSProperties;
+  onLoad?: () => void;
 }
 
 // Molecules
