@@ -1,27 +1,27 @@
-# React + TypeScript + Vite
+# Hi There 👋
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Facebook Badge](https://img.shields.io/badge/-CentroCulturalAnimeyManga-1877F2?style=flat-square&labelColor=1877F2&logo=facebook&logoColor=white&link=https://www.facebook.com/ccam.uni.pe)](https://www.facebook.com/ccam.uni.pe)
+[![Instagram Badge](https://img.shields.io/badge/-ccam.uni-E4405F?style=flat-square&labelColor=E4405F&logo=instagram&logoColor=white&link=https://www.instagram.com/ccam.uni)](https://www.instagram.com/ccam.uni)
+[![Gmail Badge](https://img.shields.io/badge/-ccam.uni@uni.edu.pe-c14438?style=flat-square&labelColor=c14438&logo=Gmail&logoColor=white&link=mailto:ccam.uni@uni.edu.pe)](mailto:ccam.uni@uni.edu.pe)
 
-Currently, two official plugins are available:
+We are **CCAM** - ***Centro Cultural Anime y Manga***, a cultural center from
+[UNI](https://portal.uni.edu.pe/) and this is the repository of our [web page](https://ccanimanga.vercel.app).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+We are from Lima-Perú and carry out many artistic and cultural activities.
 
-## Expanding the ESLint configuration
+## Workshops 🎨
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Manga.
+- Origami.
+- Shogi.
+- Hama-Beads.
+- etc.
 
-- Configure the top-level `parserOptions` property like this:
+## 🎨 Activities
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- Screenings.
+- Presentations. 
+- Events.
+- etc.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<img src="./src/assets/ccam.png" alt="CCAM" width="300">

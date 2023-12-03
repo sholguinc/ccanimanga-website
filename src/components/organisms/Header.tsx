@@ -10,7 +10,7 @@ export const Header = () => {
       <header className="header">
         <figure className="header__logo">
           <DelayLink to="/">
-            <img src={CCAMLogo} alt="ccam-logo" />
+            <img src={CCAMLogo} alt="ccam-logo" loading="eager" />
           </DelayLink>
         </figure>
         <ul className="header__routes">
