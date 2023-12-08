@@ -23,6 +23,8 @@ $background-color: $color-fake-white;
   }
 
   &__text {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
     text-align: justify;
   }
 
@@ -37,6 +39,15 @@ $background-color: $color-fake-white;
 
     z-index: 20;
     fill: $background-color;
+  }
+}
+
+@media (max-width: $lg) {
+  .description {
+    &__text {
+      font-size: 1rem;
+      line-height: 2rem;
+    }
   }
 }
 

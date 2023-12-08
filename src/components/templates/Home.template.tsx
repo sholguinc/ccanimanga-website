@@ -10,13 +10,14 @@ export const HomeTemplate = () => {
       <InfoCard
         title="Quienes Somos :"
         image={Anigirl}
-        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
-        consectetur ea eius, eum excepturi laborum ratione! Commodi dicta
-        dolores eius et incidunt laborum maxime mollitia nobis, nulla sed
-        voluptate voluptatem! Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Atque consectetur ea eius, eum excepturi laborum
-        ratione! Commodi dicta dolores eius et incidunt laborum maxime mollitia
-        nobis, nulla sed voluptate voluptatem!"
+        text="El Centro Cultural Anime y Manga (CCAM) es una organización de la
+          Universidad Nacional de Ingeniería (UNI) que tiene como objetivo la
+          difusión de la cultura japonesa en sus distintas facetas, desde su
+          idioma hasta su música, desde el anime hasta al shogi. Llevamos 15 años
+          desarrollando diversas actividades y aumentando nuestro alcance tanto 
+          dentro como fuera de nuestra universidad. ¿Eres fan del manga-anime?
+          te invitamos a participar en nuestros talleres y proyecciones, así como
+          a formar parte de esta agrupación."
         to="/nosotros"
         className="home__about-us"
       />

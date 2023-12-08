@@ -3,6 +3,8 @@ import { Banner, InfoCard } from '@/components/organisms';
 import { IWorkshopsTemplate } from '@/models';
 import { WorkshopsBanner, OtherWorkshops } from '@/data';
 
+import { truncateText } from '@/utils';
+
 export const WorkshopsTemplate = ({ workshops }: IWorkshopsTemplate) => {
   return (
     <>
@@ -15,7 +17,7 @@ export const WorkshopsTemplate = ({ workshops }: IWorkshopsTemplate) => {
           <InfoCard
             key={index}
             title={workshop.name}
-            text={workshop.description}
+            text={truncateText(workshop.description)}
             image={workshop.figure}
             imageTransform={workshop.figureTransform}
             to={workshop.path}
@@ -25,10 +27,10 @@ export const WorkshopsTemplate = ({ workshops }: IWorkshopsTemplate) => {
       })}
       <InfoCard
         title="Talleres Experimentales"
-        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Accusantium beatae corpori deseruntearum error placeat, reprehenderit?
-        Beatae est non sapiente. Aut et in non quis repellendus, saepsuscipit
-        vero voluptatem!"
+        text='Todos los talleres no-oficiales que realizamos las denominamos "experimentales"
+          y sirven para probar nuevas actividades que puedan ser de interés y formalizarse
+          en un futuro. Por ejemplo, elaboración de accesorios para cosplay (cosmaker), música
+          japonesa, etc.'
         image={OtherWorkshops}
         imageTransform="scale(1.6) translate(-2%, 15%)"
         className="other-workshops"
