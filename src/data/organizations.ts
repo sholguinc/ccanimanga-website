@@ -3,7 +3,7 @@ import { IOrganization } from '@/models';
 export const organizations: IOrganization[] = [
   {
     name: 'CCAM',
-    url: 'https://www.facebook.com/ccam.uni.pe',
+    url: 'https://linktr.ee/ccam_uni',
   },
   {
     name: 'Centro Cultural UNI',
