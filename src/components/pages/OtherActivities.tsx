@@ -4,7 +4,7 @@ import { IActivityTemplate, IBackground, IDescription } from '@/models';
 import {
   OtherActivitiesBanner,
   OtherActivitiesDescriptionImage,
-  screeningsGallery,
+  otherActivitiesGallery,
 } from '@/data';
 
 const OtherActivities = () => {
@@ -24,7 +24,7 @@ const OtherActivities = () => {
         'lugares en los que nos damos a conocer es una buena forma de hacerlo.',
       img: OtherActivitiesDescriptionImage,
     } as IDescription,
-    gallery: screeningsGallery,
+    gallery: otherActivitiesGallery,
   };
 
   return (
