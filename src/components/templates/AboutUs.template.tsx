@@ -1,7 +1,7 @@
 import { AboutUsSection } from '@/components/molecules';
 import { Banner } from '@/components/organisms';
 
-import { AboutUsBanner, CCAMGroup, UNI } from '@/data';
+import { AboutUsBanner, CCAMGroup, UNI, Origin, Community } from '@/data';
 
 export const AboutUsTemplate = () => {
   return (
@@ -39,16 +39,16 @@ export const AboutUsTemplate = () => {
           la cultura manga-anime. Con el paso del tiempo nos aventuramos a aprender
           y difundir varias actividades orientadas a las artes plásticas,
           agregando una nueva perspectiva al elenco."
-        image={UNI}
+        image={Origin}
       />
       <AboutUsSection
         title="Comunidad"
         text="En nuestros 15 años de historia, el CCAM ha pasado por una gran
           cantidad de miembros, participantes de talleres, estudiantes universitarios,
-          profesores, entre otros. Estos forman la comunidad del elenco, con los cuales
-          se mantiene contacto para poder mantener la actividad y el legado a través de los
-          años."
-        image={UNI}
+          profesores, asistentes a los talleres, invitados, entre otros. Estos conforman
+          a la comunidad del elenco, con los cuales se mantiene contacto para poder
+          mantener la actividad y el legado a través de los años."
+        image={Community}
         reverse={true}
         className="last-section"
       />

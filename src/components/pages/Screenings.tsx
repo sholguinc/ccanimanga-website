@@ -1,7 +1,11 @@
 import { ActivityTemplate, ImagesLoadedTemplate } from '@/components/templates';
 
 import { IActivityTemplate, IBackground, IDescription } from '@/models';
-import { ScreeningsBanner, screeningsGallery } from '@/data';
+import {
+  ScreeningsBanner,
+  ScreeningsDescriptionImage,
+  screeningsGallery,
+} from '@/data';
 
 const Screenings = () => {
   const props: IActivityTemplate = {
@@ -19,7 +23,7 @@ const Screenings = () => {
         'cultural o por su importancia en el medio, estas se realizan normalmente en un ' +
         'auditorio o salón de alguna facultad. Además, realizamos sorteos y entretiempos ' +
         'para poder interactuar con los asistentes.',
-      img: ScreeningsBanner,
+      img: ScreeningsDescriptionImage,
     } as IDescription,
     gallery: screeningsGallery,
   };

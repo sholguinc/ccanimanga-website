@@ -26,7 +26,7 @@ export const workshops: StringKeyObject<IWorkshop> = {
     name: 'Origami',
     path: '/talleres/origami',
     title: 'Taller de Origami',
-    backgroundImage: baseUrl + '/backgrounds/origami.webp',
+    backgroundImage: baseUrl + '/backgrounds/origami.jpg',
     description:
       'El origami es el arte del plegado de papel con el propósito de formar objetos bidimensionales ' +
       'y tridimensionales. El origami clásico se realiza exclusivamente con dobleces de un único trozo ' +
@@ -76,7 +76,7 @@ export const workshops: StringKeyObject<IWorkshop> = {
     name: 'Hama Beads',
     path: '/talleres/hama-beads',
     title: 'Taller de Hama-Beads',
-    backgroundImage: baseUrl + '/backgrounds/papercraft.jpg',
+    backgroundImage: baseUrl + '/backgrounds/hama-beads.png',
     description:
       'Las "hama beads" son unas pequeñas fichas de plástico con forma cilíndrica y que, con el calor de una plancha, se ' +
       'funden solidificando la figura que hemos formado con estas piezas. La finalidad de esta manualidad es crear ' +
@@ -84,7 +84,7 @@ export const workshops: StringKeyObject<IWorkshop> = {
       'placa con clavijas que se conoce como "pegboard", donde se quedan fijas para ir formando poco a poco el dibujo. Es ' +
       'una actividad relativamente simple, pero justo por eso muy popular, pues la complejidad depende únicamente de lo que ' +
       'se proponga uno mismo.',
-    descriptionImage: baseUrl + '/descriptions/papercraft.jpg',
+    descriptionImage: baseUrl + '/descriptions/hama-beads.jpg',
     figure: baseUrl + '/figures/hama-beads.png',
     figureTransform: 'translateY(-5%)',
     gallery: mangaGallery,
@@ -93,7 +93,7 @@ export const workshops: StringKeyObject<IWorkshop> = {
     name: 'Idioma Japonés',
     path: '/talleres/japones',
     title: 'Taller de Japonés',
-    backgroundImage: baseUrl + '/backgrounds/papercraft.jpg',
+    backgroundImage: baseUrl + '/backgrounds/japones.png',
     description:
       'El idioma es parte esencial de la identidad cultural de un país, su importancia va más allá de ser una herramienta ' +
       'de comunicación. La lengua nos ayuda también a comprender la historia y las costumbres de un pueblo, así como su ' +
@@ -101,7 +101,7 @@ export const workshops: StringKeyObject<IWorkshop> = {
       'comparte raíces con ninguna otra lengua. Cuatro sistemas de escritura pueden ser utilizados en Japón: "Hiragana" que es ' +
       'silábico y sencillo; "Katakana" que sirve para escribir palabras extranjeras; "Kanji" el cual está basado en los ideogramas ' +
       'chinos y "Romaji" que es usado en la transcripción fonética del japonés para el alfabeto latino.',
-    descriptionImage: baseUrl + '/descriptions/papercraft.jpg',
+    descriptionImage: baseUrl + '/descriptions/japones.png',
     figure: baseUrl + '/figures/japones.png',
     figureTransform: 'scale(1.25)',
     gallery: mangaGallery,
