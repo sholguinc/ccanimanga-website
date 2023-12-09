@@ -1,5 +1,13 @@
 import { StringKeyObject, IWorkshop } from '@/models';
-import { imageStorage, mangaGallery } from '@/data';
+import {
+  imageStorage,
+  mangaGallery,
+  origamiGallery,
+  shogiGallery,
+  papercraftGallery,
+  hamaBeadsGallery,
+  japaneseGallery,
+} from '@/data';
 
 const baseUrl = imageStorage + '/workshops';
 
@@ -37,7 +45,7 @@ export const workshops: StringKeyObject<IWorkshop> = {
     descriptionImage: baseUrl + '/descriptions/origami.jpeg',
     figure: baseUrl + '/figures/origami.png',
     figureTransform: 'translate(-5%) scale(1.2)',
-    gallery: mangaGallery,
+    gallery: origamiGallery,
   },
   shogi: {
     name: 'Shogi',
@@ -53,7 +61,7 @@ export const workshops: StringKeyObject<IWorkshop> = {
     descriptionImage: baseUrl + '/descriptions/shogi.jpg',
     figure: baseUrl + '/figures/shogi.png',
     figureTransform: 'scale(1)',
-    gallery: mangaGallery,
+    gallery: shogiGallery,
   },
   papercraft: {
     name: 'Papercraft',
@@ -70,7 +78,7 @@ export const workshops: StringKeyObject<IWorkshop> = {
     descriptionImage: baseUrl + '/descriptions/papercraft.jpg',
     figure: baseUrl + '/figures/papercraft.png',
     figureTransform: 'scale(1)',
-    gallery: mangaGallery,
+    gallery: papercraftGallery,
   },
   'hama-beads': {
     name: 'Hama Beads',
@@ -87,7 +95,7 @@ export const workshops: StringKeyObject<IWorkshop> = {
     descriptionImage: baseUrl + '/descriptions/hama-beads.jpg',
     figure: baseUrl + '/figures/hama-beads.png',
     figureTransform: 'translateY(-5%)',
-    gallery: mangaGallery,
+    gallery: hamaBeadsGallery,
   },
   japones: {
     name: 'Idioma Japonés',
@@ -104,6 +112,6 @@ export const workshops: StringKeyObject<IWorkshop> = {
     descriptionImage: baseUrl + '/descriptions/japones.png',
     figure: baseUrl + '/figures/japones.png',
     figureTransform: 'scale(1.25)',
-    gallery: mangaGallery,
+    gallery: japaneseGallery,
   },
 };
