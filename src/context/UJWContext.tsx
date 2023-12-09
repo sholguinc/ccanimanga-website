@@ -22,7 +22,7 @@ export function UJWContextProvider({ children }: IChildren) {
     setTimeout(() => {
       setLoading(false);
       setDay(selectedDay);
-    }, 400);
+    }, 600);
   };
 
   return (
