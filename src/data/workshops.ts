@@ -6,7 +6,9 @@ import {
   shogiGallery,
   papercraftGallery,
   hamaBeadsGallery,
-  japaneseGallery,
+  japonesGallery,
+  historietasGallery,
+  cosmakerGallery,
 } from '@/data';
 
 const baseUrl = imageStorage + '/workshops';
@@ -18,13 +20,11 @@ export const workshops: StringKeyObject<IWorkshop> = {
     title: 'Taller de Manga',
     backgroundImage: baseUrl + '/backgrounds/manga.jpg',
     description:
-      '"Manga" es el nombre por el cual se denomina a las historietas en Japón. Se trata de ' +
-      'una industria inmensa que es muy importante para el país nipón y que provoca la fascinación ' +
-      'de quienes no pertenecemos a esas tierras. Este estilo es uno de los más populares en ' +
-      'la actualidad, llegando hasta rincones de todo el mundo e inspirando a varios jóvenes a ' +
-      'adentrarse en este arte. En el taller de manga aprenderás las nociones básicas necesarias ' +
-      'para empezar en el dibujo, desde las proporciones del cuerpo, las características del ' +
-      'rostro, anatomía, ropas y telas, sombreado, perspectiva, etc.',
+      'El estilo de dibujo "Manga" es uno de los más populares hoy en día. Se trata de una ' +
+      'industria inmensa que es muy importante para el país nipón y que provoca la fascinación ' +
+      'de quienes no pertenecemos a esas tierras. En el taller de manga aprenderás las nociones ' +
+      'básicas necesarias para empezar en el dibujo, desde las proporciones del cuerpo, ' +
+      'las características del rostro, anatomía, ropas y telas, sombreado, perspectiva, etc.',
     descriptionImage: baseUrl + '/descriptions/manga.jpg',
     figure: baseUrl + '/figures/manga.png',
     figureTransform: 'scale(.8)',
@@ -112,6 +112,35 @@ export const workshops: StringKeyObject<IWorkshop> = {
     descriptionImage: baseUrl + '/descriptions/japones.png',
     figure: baseUrl + '/figures/japones.png',
     figureTransform: 'scale(1.25)',
-    gallery: japaneseGallery,
+    gallery: japonesGallery,
+  },
+  historietas: {
+    name: 'Elaboración de Historietas',
+    path: '/talleres/historietas',
+    title: 'Taller de Elaboración de Historietas',
+    backgroundImage: baseUrl + '/backgrounds/historietas.jpg',
+    description:
+      'La historieta es una forma de expresión artística y un medio de comunicación que consisten en una serie de dibujos, ' +
+      'dotados o no de texto de acompañamiento, que leídos en secuencia componen un relato o una serie de ellos. En este taller ' +
+      'podrás poner en práctica tus conocimientos de dibujo e story telling para crear tu propia historia en viñetas.',
+    descriptionImage: baseUrl + '/descriptions/historietas.jpeg',
+    figure: baseUrl + '/figures/historietas.png',
+    figureTransform: 'scale(1.2) translateX(-14%)',
+    gallery: historietasGallery,
+  },
+  cosmaker: {
+    name: 'Cosmaker',
+    path: '/talleres/cosmaker',
+    title: 'Taller de Cosmaker',
+    backgroundImage: baseUrl + '/backgrounds/cosmaker.jpg',
+    description:
+      'Se denomina "cosmaker" a una persona que fabrica cosplays, ya sea para uso propio o para su venta. ' +
+      'Un cosplayer puede ser su propio cosmaker o encargar los cosplays a otras personas para que los fabriquen. ' +
+      'En este taller aprenderás a usar materiales específicos como el cartón y la goma eva, para elaborar accesorios de cosplay ' +
+      'tales como armas, cascos, sombreros, etc.',
+    descriptionImage: baseUrl + '/descriptions/cosmaker.jpeg',
+    figure: baseUrl + '/figures/cosmaker.png',
+    figureTransform: 'scale(.9) translate(-1%, -3%)',
+    gallery: cosmakerGallery,
   },
 };

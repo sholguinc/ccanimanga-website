@@ -322,7 +322,7 @@ export const hamaBeadsGallery: IGalleryImage[] = [
   },
 ];
 
-export const japaneseGallery: IGalleryImage[] = [
+export const japonesGallery: IGalleryImage[] = [
   {
     alt: 'japones-01',
     src: baseUrl + '/japones/01.jpeg',
@@ -354,5 +354,107 @@ export const japaneseGallery: IGalleryImage[] = [
   {
     alt: 'japones-08',
     src: baseUrl + '/japones/08.jpg',
+  },
+];
+
+export const historietasGallery: IGalleryImage[] = [
+  {
+    alt: 'historietas-01',
+    src: baseUrl + '/historietas/01.jpeg',
+  },
+  {
+    alt: 'historietas-02',
+    src: baseUrl + '/historietas/02.jpeg',
+  },
+  {
+    alt: 'historietas-03',
+    src: baseUrl + '/historietas/03.jpeg',
+  },
+  {
+    alt: 'historietas-04',
+    src: baseUrl + '/historietas/04.jpeg',
+  },
+  {
+    alt: 'historietas-05',
+    src: baseUrl + '/historietas/05.jpeg',
+  },
+  {
+    alt: 'historietas-06',
+    src: baseUrl + '/historietas/06.jpeg',
+  },
+  {
+    alt: 'historietas-07',
+    src: baseUrl + '/historietas/07.jpeg',
+  },
+  {
+    alt: 'historietas-08',
+    src: baseUrl + '/historietas/08.jpg',
+  },
+];
+
+export const cosmakerGallery: IGalleryImage[] = [
+  {
+    alt: 'cosmaker-01',
+    src: baseUrl + '/cosmaker/01.jpeg',
+  },
+  {
+    alt: 'cosmaker-02',
+    src: baseUrl + '/cosmaker/02.jpeg',
+  },
+  {
+    alt: 'cosmaker-03',
+    src: baseUrl + '/cosmaker/03.jpeg',
+  },
+  {
+    alt: 'cosmaker-04',
+    src: baseUrl + '/cosmaker/04.jpeg',
+  },
+  {
+    alt: 'cosmaker-05',
+    src: baseUrl + '/cosmaker/05.jpeg',
+  },
+  {
+    alt: 'cosmaker-06',
+    src: baseUrl + '/cosmaker/06.jpeg',
+  },
+  {
+    alt: 'cosmaker-07',
+    src: baseUrl + '/cosmaker/07.jpeg',
+  },
+  {
+    alt: 'cosmaker-08',
+    src: baseUrl + '/cosmaker/08.jpg',
+  },
+  {
+    alt: 'cosmaker-09',
+    src: baseUrl + '/cosmaker/09.jpg',
+  },
+  {
+    alt: 'cosmaker-10',
+    src: baseUrl + '/cosmaker/10.jpeg',
+  },
+  {
+    alt: 'cosmaker-11',
+    src: baseUrl + '/cosmaker/11.jpeg',
+  },
+  {
+    alt: 'cosmaker-12',
+    src: baseUrl + '/cosmaker/12.jpeg',
+  },
+  {
+    alt: 'cosmaker-13',
+    src: baseUrl + '/cosmaker/13.jpeg',
+  },
+  {
+    alt: 'cosmaker-14',
+    src: baseUrl + '/cosmaker/14.jpeg',
+  },
+  {
+    alt: 'cosmaker-15',
+    src: baseUrl + '/cosmaker/15.jpeg',
+  },
+  {
+    alt: 'cosmaker-16',
+    src: baseUrl + '/cosmaker/16.jpg',
   },
 ];

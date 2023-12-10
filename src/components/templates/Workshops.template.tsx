@@ -29,7 +29,8 @@ export const WorkshopsTemplate = ({ workshops }: IWorkshopsTemplate) => {
         title="Talleres Experimentales"
         text='Todos los talleres no-oficiales que realizamos las denominamos "experimentales"
           y sirven para probar nuevas actividades que puedan ser de interés y formalizarse
-          en un futuro. Por ejemplo, modelado 3D, cerámica en frío, música japonesa, etc.'
+          en un futuro. Estos incluyen: modelado 3D, cerámica en frío, música japonesa y cualquier
+          otra nueva idea que se nos ocurra desarrollar.'
         image={OtherWorkshops}
         imageTransform="scale(1.6) translate(-2%, 15%)"
         className="other-workshops"
