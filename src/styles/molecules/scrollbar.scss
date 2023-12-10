@@ -1,17 +1,15 @@
 .simplebar-scrollbar::before {
-  color: transparent;
-  background: none;
-}
-
-.simplebar-scrollbar {
-  background-color: transparent;
-  width: 5px;
-  margin-left: 4px;
-  border-radius: 3px;
-  transition: background-color 400ms ease-in;
-}
-
-.simplebar-visible {
   background-color: $ccam-red;
-  transition: background-color 200ms ease-in;
+}
+
+.simplebar-scrollbar.simplebar-visible::before {
+  opacity: 1;
+}
+
+.simplebar-track.simplebar-vertical {
+  width: 10px;
+}
+
+.simplebar-scrollbar.simplebar-visible.simplebar-vertical::before {
+  width: 10px;
 }
