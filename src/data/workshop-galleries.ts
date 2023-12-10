@@ -164,35 +164,35 @@ export const shogiGallery: IGalleryImage[] = [
   },
   {
     alt: 'shogi-07',
-    src: baseUrl + '/shogi/07.jpg',
+    src: baseUrl + '/shogi/07.jpeg',
   },
   {
     alt: 'shogi-08',
-    src: baseUrl + '/shogi/08.jpg',
+    src: baseUrl + '/shogi/08.jpeg',
   },
   {
     alt: 'shogi-09',
-    src: baseUrl + '/shogi/09.jpg',
+    src: baseUrl + '/shogi/09.jpeg',
   },
   {
     alt: 'shogi-10',
-    src: baseUrl + '/shogi/10.jpg',
+    src: baseUrl + '/shogi/10.jpeg',
   },
   {
     alt: 'shogi-11',
-    src: baseUrl + '/shogi/11.jpg',
+    src: baseUrl + '/shogi/11.jpeg',
   },
   {
     alt: 'shogi-12',
-    src: baseUrl + '/shogi/12.jpg',
+    src: baseUrl + '/shogi/12.jpeg',
   },
   {
     alt: 'shogi-13',
-    src: baseUrl + '/shogi/13.jpg',
+    src: baseUrl + '/shogi/13.jpeg',
   },
   {
     alt: 'shogi-14',
-    src: baseUrl + '/shogi/14.jpg',
+    src: baseUrl + '/shogi/14.jpeg',
   },
   {
     alt: 'shogi-15',
@@ -274,39 +274,39 @@ export const papercraftGallery: IGalleryImage[] = [
 export const hamaBeadsGallery: IGalleryImage[] = [
   {
     alt: 'hama-beads-01',
-    src: baseUrl + '/hama-beads/01.png',
+    src: baseUrl + '/hama-beads/01.jpeg',
   },
   {
     alt: 'hama-beads-02',
-    src: baseUrl + '/hama-beads/02.png',
+    src: baseUrl + '/hama-beads/02.jpeg',
   },
   {
     alt: 'hama-beads-03',
-    src: baseUrl + '/hama-beads/03.png',
+    src: baseUrl + '/hama-beads/03.jpeg',
   },
   {
     alt: 'hama-beads-04',
-    src: baseUrl + '/hama-beads/04.png',
+    src: baseUrl + '/hama-beads/04.jpeg',
   },
   {
     alt: 'hama-beads-05',
-    src: baseUrl + '/hama-beads/05.png',
+    src: baseUrl + '/hama-beads/05.jpeg',
   },
   {
     alt: 'hama-beads-06',
-    src: baseUrl + '/hama-beads/06.png',
+    src: baseUrl + '/hama-beads/06.jpeg',
   },
   {
     alt: 'hama-beads-07',
-    src: baseUrl + '/hama-beads/07.png',
+    src: baseUrl + '/hama-beads/07.jpeg',
   },
   {
     alt: 'hama-beads-08',
-    src: baseUrl + '/hama-beads/08.png',
+    src: baseUrl + '/hama-beads/08.jpeg',
   },
   {
     alt: 'hama-beads-09',
-    src: baseUrl + '/hama-beads/09.png',
+    src: baseUrl + '/hama-beads/09.jpeg',
   },
   {
     alt: 'hama-beads-10',
@@ -325,50 +325,34 @@ export const hamaBeadsGallery: IGalleryImage[] = [
 export const japaneseGallery: IGalleryImage[] = [
   {
     alt: 'japones-01',
-    src: baseUrl + '/japones/01.png',
+    src: baseUrl + '/japones/01.jpeg',
   },
   {
     alt: 'japones-02',
-    src: baseUrl + '/japones/02.png',
+    src: baseUrl + '/japones/02.jpeg',
   },
   {
     alt: 'japones-03',
-    src: baseUrl + '/japones/03.png',
+    src: baseUrl + '/japones/03.jpeg',
   },
   {
     alt: 'japones-04',
-    src: baseUrl + '/japones/04.png',
+    src: baseUrl + '/japones/04.jpeg',
   },
   {
     alt: 'japones-05',
-    src: baseUrl + '/japones/05.png',
+    src: baseUrl + '/japones/05.jpeg',
   },
   {
     alt: 'japones-06',
-    src: baseUrl + '/japones/06.png',
+    src: baseUrl + '/japones/06.jpg',
   },
   {
     alt: 'japones-07',
-    src: baseUrl + '/japones/07.png',
+    src: baseUrl + '/japones/07.jpg',
   },
   {
     alt: 'japones-08',
-    src: baseUrl + '/japones/08.png',
-  },
-  {
-    alt: 'japones-09',
-    src: baseUrl + '/japones/09.png',
-  },
-  {
-    alt: 'japones-10',
-    src: baseUrl + '/japones/10.png',
-  },
-  {
-    alt: 'japones-11',
-    src: baseUrl + '/japones/11.jpg',
-  },
-  {
-    alt: 'japones-12',
-    src: baseUrl + '/japones/12.jpg',
+    src: baseUrl + '/japones/08.jpg',
   },
 ];

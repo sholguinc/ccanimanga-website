@@ -84,7 +84,7 @@ export const workshops: StringKeyObject<IWorkshop> = {
     name: 'Hama Beads',
     path: '/talleres/hama-beads',
     title: 'Taller de Hama-Beads',
-    backgroundImage: baseUrl + '/backgrounds/hama-beads.png',
+    backgroundImage: baseUrl + '/backgrounds/hama-beads.jpeg',
     description:
       'Las "hama beads" son unas pequeñas fichas de plástico con forma cilíndrica y que, con el calor de una plancha, se ' +
       'funden solidificando la figura que hemos formado con estas piezas. La finalidad de esta manualidad es crear ' +
